@@ -1,0 +1,28 @@
+@use "./variables";
+
+body {
+    width: 100%;
+    height: 100%;
+    color: map-get(variables.$fontColors, "blackColor");
+    background-color: map-get(variables.$colors, "blackColor");
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: map-get(variables.$scrolbarColors, "blackTrack");
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: map-get(variables.$scrolbarColors, "handle");
+    border-radius: 0.5rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: map-get(variables.$scrolbarColors, "handleHover"); 
+  }

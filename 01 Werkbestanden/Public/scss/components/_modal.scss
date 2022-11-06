@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+@use "../abstracts/animations";
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: map-get(variables.$modalColors, "fallbackBlack");
+    background-color: map-get(variables.$modalColors, "blackColor");
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+  }
+  .modal-content {  
+    @include animations.zoom;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: map-get(variables.$modalColors, "whiteColor");
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+  .close:focus {
+    color: map-get(variables.$modalColors, "whiteHoverColor");
+    text-decoration: none;
+    cursor: pointer;
+  }

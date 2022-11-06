@@ -1,0 +1,26 @@
+@use "../abstracts/variables";
+
+.button__scrollToTop {
+    border: none;
+    color: map-get(variables.$fontColors, "blackColor");
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+  }
+  
+  .whiteBtn {
+    color: map-get(variables.$fontColors, "whiteColor");;
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }

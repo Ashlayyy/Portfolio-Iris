@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Iris Meijer - Dier</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/43e7afcfc9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="figure__withoutBackground">
+            <div class="figure__tekstWrapper">
+                <h2 class="figure__h2">
+                    <a class="figure__link" href="/"> Iris Meijer </a>
+                </h2>
+                <h4 class="figure__h4">Mijn fotografie</h4>
+            </div>
+        </div>
+        <nav class="navigation">
+            <div class="navigation__wrapper">
+                <img class="navigation__img" src="/img/Images - General/Logo Iris -2.jpeg" alt="Logo van Iris." />
+
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/dier"> Dier </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/natuur"> Natuur </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="/overMij"> Over mij </a>
+                    </li>
+                </ul>
+
+                <button class="navigation__button" id="navigation__button">Contact</button>
+            </div>
+        </nav>
+    </header>
+
+    <article class="main__dier">
+        <h2 class="main__dier__title">
+            Dier
+        </h2>
+        <div class="main__dier__gallery">
+            <img src="/img/Images - Portfolio/Images - Dier/Liggend/Huh-min.JPG" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Liggend/Onschuldig-min.JPG" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Liggend/Woody-min.jpg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/De Buizerd-min.jpg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/DSC_1898.jpeg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/Woody-in-sneeuw.jpeg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/Tijn.jpg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/Bo.jpg" alt="" class="main__dier__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Dier/Staand/Fierro.jpg" alt="" class="main__dier__foto foto__clickable" />
+        </div>
+        <div class="main__dier__artisButton">
+            <button class="main__dier__button" id="artis__button">
+                Benieuwd naar foto's an de dieren in Artis?
+            </button>
+        </div>
+    </article>
+
+    <span class="button__scrollToTop" id="button__scrollToTop">
+        <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </span>
+
+    <div id="modalImage" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-content">
+    </div>
+
+    <footer class="footer">
+        <p class="footer__tekst">
+            Copyright © <span class="footer__copyrightYear" id="footer__copyrightYear"></span> Iris Meijer. Alle rechten voorbehouden. 
+        </p>
+    </footer>
+</body>
+
+</html>

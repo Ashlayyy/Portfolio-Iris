@@ -1,0 +1,40 @@
+@use "variables";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flexGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin blackButton {
+    background: map-get(variables.$buttonColors, "blackGradient");
+    background-color: map-get(variables.$buttonColors, "blackColor");
+    border-radius: 4rem;
+    border: 0.1rem solid map-get(variables.$buttonColors, "whiteBorder");
+    display: inline-block;
+    cursor: pointer;
+    color: map-get(variables.$buttonColors, "whiteTekstColor");;
+    font-family: Arial;
+    font-size: 1.8rem;
+    padding: 1.5rem 2.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: map-get(variables.$buttonColors, "blackGradient");
+        background-color: map-get(variables.$buttonColors, "blackColor");
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
