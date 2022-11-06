@@ -3,7 +3,9 @@ const favicon = require('serve-favicon');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
