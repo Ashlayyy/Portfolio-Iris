@@ -5,6 +5,10 @@
     height: 70rem;
     background: url('/img/Images - Index/Church-extra-small-min.png');
     background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: map-get(variables.$colors, "blackColor");
+    
 
     text-align: center;
     justify-content: flex-end;
