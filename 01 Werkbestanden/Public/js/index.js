@@ -68,7 +68,6 @@ if (examen2_button) {
   });
 }
 
-//email versturen
 const formSubmit = document.getElementById("submitButton");
 if (formSubmit) {
   formSubmit.addEventListener("click", (event) => {
@@ -78,23 +77,34 @@ if (formSubmit) {
     const phoneValue = document.getElementById("telefoon").value;
     const berichtValue = document.getElementById("bericht").value;
 
-    fetch("/sendEmail", {
-      method: "POST",
-      body: JSON.stringify({
-        voornaam: voornaamValue,
-        achternaam: achternaamValue,
-        email: emailValue,
-        telefoon: phoneValue,
-        bericht: berichtValue,
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((response) => console.log(response))
+    if (
+      voornaamValue && typeof voornaamValue !== '' &&
+      achternaamValue && typeof achternaamValue !== '' &&
+      emailValue && typeof emailValue !== '' &&
+      phoneValue && typeof phoneValue !== '' &&
+      berichtValue && typeof berichtValue !== ''
+    ) {
+      fetch("/sendEmail", {
+        method: "POST",
+        body: JSON.stringify({
+          voornaam: voornaamValue,
+          achternaam: achternaamValue,
+          email: emailValue,
+          telefoon: phoneValue,
+          bericht: berichtValue,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      }).then((response) => {
+        alert('Email succesvol verzonden');
+        location.reload();
+      });
+    } else {
+      alert('De velden mogen niet leeg zijn!');
+    }
   });
 }
-
 
 //modal image
 const modal = document.getElementById("modalImage");
@@ -102,18 +112,18 @@ const modal = document.getElementById("modalImage");
 const img = document.querySelectorAll(".foto__clickable");
 const modalImg = document.getElementById("modal-content");
 
-modal.addEventListener('click', () => {
+modal.addEventListener("click", () => {
   modal.style.display = "none";
-})
+});
 
-img.forEach(img => {
-  img.addEventListener('click', (event) => {
+img.forEach((img) => {
+  img.addEventListener("click", (event) => {
     modal.style.display = "block";
     modalImg.src = img.src;
-  })
-})
+  });
+});
 
 const span = document.getElementsByClassName("close")[0];
-span.onclick = function() { 
+span.onclick = function () {
   modal.style.display = "none";
-}
+};

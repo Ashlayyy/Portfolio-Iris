@@ -39,3 +39,39 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* The Modal (background) */
+.modal__email {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: map-get(variables.$modalColors, "fallbackBlack"); 
+  background-color: map-get(variables.$modalColors, "blackColorTwo"); 
+
+  &__content {
+    background-color: map-get(variables.$modalColors, "whiteBackGroundColor"); 
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid map-get(variables.$modalColors, "grayColor"); 
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  &__close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: map-get(variables.$colors, "blackColor");
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
