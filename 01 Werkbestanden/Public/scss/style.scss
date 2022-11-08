@@ -1,6 +1,5 @@
 @use "abstracts/base";
 @use "abstracts/reset";
-@use "abstracts/mediaqueries";
 
 @use "components/header";
 @use "components/navigation";
@@ -8,3 +7,5 @@
 @use "components/footer";
 @use "components/button";
 @use "components/modal";
+
+@use "abstracts/mediaqueries";

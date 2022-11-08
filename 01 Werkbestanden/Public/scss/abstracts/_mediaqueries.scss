@@ -1,0 +1,85 @@
+@media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
+    .figure {
+        height: 55vh
+    }
+
+    .main__overmij {
+        height: 175vh;
+        width: 100%;
+
+        &__foto {
+            height: 25rem;
+            width: 35rem;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            width: 100%;
+            height: 90rem;
+        }
+
+        &__tekst {
+            width: 40ch;
+        }
+
+        &__buttonsWrapper  {
+            height: 20rem;
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
+    .main__contact {
+        height: 200rem;
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__formDoubleInputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__tekstInput {
+            width: 42.5rem;
+        }
+    }
+}   
+
+@media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+    .navigation {
+        flex-wrap: wrap;
+        height: auto;
+
+        &__list {
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .main__signature {
+        &__title {
+            font-size: 125%;
+        }
+
+        &__tekst {
+            width: 35ch;
+            font-size: 100%;
+        }
+    }
+
+    .main__examenProduct {
+        &__title {
+            font-size: 125%;
+        }
+
+        &__paragraph {
+            font-size: 90%;
+            width: 35ch;
+        }
+    }
+}

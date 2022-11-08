@@ -78,11 +78,16 @@ if (formSubmit) {
     const berichtValue = document.getElementById("bericht").value;
 
     if (
-      voornaamValue && typeof voornaamValue !== '' &&
-      achternaamValue && typeof achternaamValue !== '' &&
-      emailValue && typeof emailValue !== '' &&
-      phoneValue && typeof phoneValue !== '' &&
-      berichtValue && typeof berichtValue !== ''
+      voornaamValue &&
+      typeof voornaamValue !== "" &&
+      achternaamValue &&
+      typeof achternaamValue !== "" &&
+      emailValue &&
+      typeof emailValue !== "" &&
+      phoneValue &&
+      typeof phoneValue !== "" &&
+      berichtValue &&
+      typeof berichtValue !== ""
     ) {
       fetch("/sendEmail", {
         method: "POST",
@@ -97,11 +102,11 @@ if (formSubmit) {
           "Content-type": "application/json; charset=UTF-8",
         },
       }).then((response) => {
-        alert('Email succesvol verzonden');
+        alert("Email succesvol verzonden");
         location.reload();
       });
     } else {
-      alert('De velden mogen niet leeg zijn!');
+      alert("De velden mogen niet leeg zijn!");
     }
   });
 }
@@ -112,18 +117,25 @@ const modal = document.getElementById("modalImage");
 const img = document.querySelectorAll(".foto__clickable");
 const modalImg = document.getElementById("modal-content");
 
-modal.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-img.forEach((img) => {
-  img.addEventListener("click", (event) => {
-    modal.style.display = "block";
-    modalImg.src = img.src;
-  });
-});
-
 const span = document.getElementsByClassName("close")[0];
-span.onclick = function () {
-  modal.style.display = "none";
-};
+
+if (modal) {
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+if (img) {
+  img.forEach((img) => {
+    img.addEventListener("click", (event) => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+}
+
+if (span) {
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+}

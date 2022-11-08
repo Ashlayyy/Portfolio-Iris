@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "Bookman Old Style";
+  src: url("https://fonts.cdnfonts.com/css/bookman-old-style?styles=14961");
+}
+@font-face {
+  font-family: "Andale Mono";
+  src: url("https://fonts.cdnfonts.com/css/andale-mono?styles=17832");
+}
 body {
   width: 100%;
   height: 100%;
   color: #000;
   background-color: #000;
+  font-family: "Andale Mono", sans-serif;
 }
 
 /* width */
@@ -42,7 +51,7 @@ body {
 
 .figure {
   width: 100%;
-  height: 70rem;
+  height: 50rem;
   background: url("/img/Images - Index/Church-extra-small-min.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -59,6 +68,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .figure__h2 {
   font-size: 175%;
@@ -111,6 +121,7 @@ body {
   width: 100%;
   height: 10%;
   background: #000;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .navigation__wrapper {
   display: flex;
@@ -138,6 +149,7 @@ body {
   text-decoration: none;
   font-size: 120%;
   transition: 0.3s all;
+  text-transform: uppercase;
 }
 .navigation__link:hover {
   color: #e66842;
@@ -160,6 +172,8 @@ body {
   text-decoration: none;
   text-shadow: 0px 1px 0px #854629;
   transition: 0.3s all;
+  text-transform: uppercase;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .navigation__button:hover {
   background-color: #bc3315;
@@ -174,25 +188,27 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 7rem;
-  padding: 7rem;
+  padding: 4rem;
   background: #eee;
 }
 .main__index__title {
   text-align: center;
   width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__index__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 2rem;
 }
 .main__index__foto {
-  height: 20%;
-  width: 35%;
+  height: 40rem;
+  width: 55rem;
   border-radius: 1rem;
   transition: 0.3s all;
 }
@@ -212,6 +228,7 @@ body {
 .main__dier__title {
   text-align: center;
   width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__dier__gallery {
   display: flex;
@@ -223,10 +240,16 @@ body {
   gap: 2rem;
 }
 .main__dier__foto {
-  height: 20%;
-  width: 30%;
   border-radius: 1rem;
   transition: 0.3s all;
+}
+.main__dier__foto.foto__staand {
+  height: 55rem;
+  width: 35rem;
+}
+.main__dier__foto.foto__liggend {
+  height: 25rem;
+  width: 35rem;
 }
 .main__dier__foto:hover {
   opacity: 0.7;
@@ -280,19 +303,21 @@ body {
 .main__natuur__title {
   text-align: center;
   width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__natuur__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 2rem;
 }
 .main__natuur__foto {
-  height: 20%;
-  width: 30%;
+  height: 25rem;
+  width: 35rem;
   border-radius: 1rem;
   transition: 0.3s all;
 }
@@ -316,10 +341,13 @@ body {
 .main__signature__title {
   text-align: center;
   width: 100%;
+  padding-top: 2rem;
+  margin-bottom: -4rem;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__signature__tekst {
   width: 55ch;
-  height: 15rem;
+  min-height: 17rem;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
 }
@@ -330,20 +358,19 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  gap: 2rem;
 }
 .main__signature__figure {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 25%;
-  width: 35%;
+  height: 35rem;
+  width: 50rem;
 }
 .main__signature__foto {
   border-radius: 1rem;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   transition: 0.3s all;
 }
 .main__signature__foto:hover {
@@ -361,12 +388,13 @@ body {
 .main__overmij {
   width: 100%;
   height: 75rem;
+  padding: 4rem;
   background: #eee;
 }
 .main__overmij__title {
   text-align: center;
   width: 100%;
-  padding-top: 2rem;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__overmij__wrapper {
   display: flex;
@@ -429,18 +457,20 @@ body {
 .main__contact {
   height: 135rem;
   width: 100%;
+  padding: 4rem;
   background: #eee;
 }
 .main__contact__title {
   text-align: center;
   width: 100%;
-  padding-top: 2rem;
   margin-bottom: 5rem;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__contact__gegevens, .main__contact__socialTitle {
   padding-bottom: 2rem;
   text-decoration: underline;
   font-size: 125%;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__contact__wrapper {
   display: flex;
@@ -541,6 +571,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+}
+.main__contact__formTitle {
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__contact__inputLabel {
   font-weight: bold;
@@ -649,19 +682,21 @@ body {
 .main__artis__title {
   text-align: center;
   width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__artis__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 2rem;
 }
 .main__artis__foto {
-  height: 20%;
-  width: 30%;
+  height: 55rem;
+  width: 35rem;
   border-radius: 1rem;
   transition: 0.3s all;
 }
@@ -717,11 +752,15 @@ body {
 .main__examenProduct__title {
   text-align: center;
   width: 100%;
-  font-size: 200%;
+  font-size: 175%;
   text-transform: uppercase;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__examenProduct__paragraph {
   width: 50ch;
+}
+.main__examenProduct__subTitle {
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__examenProduct__gallery {
   display: flex;
@@ -737,6 +776,18 @@ body {
   width: 30%;
   border-radius: 1rem;
   transition: 0.3s all;
+}
+.main__examenProduct__foto.foto__staand {
+  height: 55rem;
+  width: 35rem;
+}
+.main__examenProduct__foto.foto__liggend {
+  height: 25rem;
+  width: 35rem;
+}
+.main__examenProduct__foto.foto__liggend__detail {
+  height: 15rem;
+  width: 35rem;
 }
 .main__examenProduct__foto:hover {
   opacity: 0.7;
@@ -758,7 +809,8 @@ body {
   text-align: center;
   width: 100%;
   font-size: 200%;
-  font-weight: lighter;
+  font-weight: bold;
+  font-family: "Bookman Old Style", sans-serif;
 }
 .main__examen3D__paragraph {
   text-decoration: underline;
@@ -777,6 +829,7 @@ body {
   text-transform: uppercase;
   font-size: 80%;
   letter-spacing: 0.2rem;
+  bottom: 0;
 }
 
 .button__scrollToTop {
@@ -893,6 +946,73 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
+  .figure {
+    height: 55vh;
+  }
+  .main__overmij {
+    height: 175vh;
+    width: 100%;
+  }
+  .main__overmij__foto {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__overmij__wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 90rem;
+  }
+  .main__overmij__tekst {
+    width: 40ch;
+  }
+  .main__overmij__buttonsWrapper {
+    height: 20rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
+  .main__contact {
+    height: 200rem;
+  }
+  .main__contact__wrapper {
+    flex-direction: column;
+  }
+  .main__contact__formDoubleInputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__contact__tekstInput {
+    width: 42.5rem;
+  }
+}
+@media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+  .navigation {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .navigation__list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .main__signature__title {
+    font-size: 125%;
+  }
+  .main__signature__tekst {
+    width: 35ch;
+    font-size: 100%;
+  }
+  .main__examenProduct__title {
+    font-size: 125%;
+  }
+  .main__examenProduct__paragraph {
+    font-size: 90%;
+    width: 35ch;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
