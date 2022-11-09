@@ -416,8 +416,8 @@ body {
 }
 .main__overmij__paragraph {
   color: #000;
-  font-weight: 100;
-  line-height: 2.5rem;
+  font-weight: 500;
+  line-height: 2.2rem;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
 }
@@ -636,8 +636,15 @@ body {
 .main__contact__berichtInput:focus {
   border-bottom: 0.1rem solid #000;
 }
-.main__contact__formSubmitButton {
+.main__contact__formButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+}
+.main__contact__formSubmitButton {
+  width: 50%;
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
   background-color: #000;
   border-radius: 4rem;
@@ -658,13 +665,6 @@ body {
 .main__contact__formSubmitButton:active {
   position: relative;
   top: 1px;
-}
-.main__contact__buttonWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
 }
 
 .main__artis {
@@ -786,7 +786,7 @@ body {
   width: 35rem;
 }
 .main__examenProduct__foto.foto__liggend__detail {
-  height: 15rem;
+  height: 12.5rem;
   width: 35rem;
 }
 .main__examenProduct__foto:hover {
@@ -990,6 +990,10 @@ body {
   }
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+  .main__index__foto {
+    height: 20rem;
+    width: 30rem;
+  }
   .navigation {
     flex-wrap: wrap;
     height: auto;
@@ -1000,11 +1004,11 @@ body {
     margin-bottom: 2rem;
   }
   .main__signature__title {
-    font-size: 125%;
+    font-size: 120%;
   }
   .main__signature__tekst {
-    width: 35ch;
-    font-size: 100%;
+    width: 30ch;
+    font-size: 95%;
   }
   .main__examenProduct__title {
     font-size: 125%;
@@ -1012,6 +1016,18 @@ body {
   .main__examenProduct__paragraph {
     font-size: 90%;
     width: 35ch;
+  }
+  .main__overmij__tekst {
+    width: 30ch;
+  }
+  .main__contact__tekstInput, .main__contact__emailInput, .main__contact__telefoonInput, .main__contact__berichtInput {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1500px), screen and (min-device-width: 800px) {
+  .spacing {
+    width: 100%;
+    height: 5%;
   }
 }
 
