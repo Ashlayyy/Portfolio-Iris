@@ -1046,9 +1046,15 @@ body {
     padding: 2.5rem;
     font-size: 100%;
     height: auto;
+    text-align: center;
   }
   .main__contact__tekstInput, .main__contact__emailInput, .main__contact__telefoonInput, .main__contact__berichtInput {
     width: 25rem;
+  }
+  .main__contact__formInputWrappers {
+    justify-content: center;
+    text-align: center;
+    font-size: 95%;
   }
   .spacing {
     display: none;
