@@ -959,7 +959,7 @@ body {
     height: 55vh;
   }
   .main__overmij {
-    height: 175vh;
+    height: 200vh;
     width: 100%;
   }
   .main__overmij__foto {
@@ -969,16 +969,16 @@ body {
   .main__overmij__wrapper {
     flex-direction: column;
     width: 100%;
-    height: 100rem;
+    height: 115rem;
   }
   .main__overmij__tekst {
     width: 40ch;
     text-align: center;
   }
   .main__overmij__buttonsWrapper {
-    height: 20rem;
+    height: 15rem;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
   .spacing {
     display: none;
@@ -1042,9 +1042,9 @@ body {
     width: 30ch;
   }
   .main__contact__tijden {
-    width: 30ch;
+    width: 35ch;
     padding: 2.5rem;
-    font-size: 75%;
+    font-size: 100%;
     height: auto;
   }
   .main__contact__tekstInput, .main__contact__emailInput, .main__contact__telefoonInput, .main__contact__berichtInput {
