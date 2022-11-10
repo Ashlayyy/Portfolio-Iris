@@ -54,7 +54,7 @@ router.post('/sendEmail', (req, res, next) => {
       
       var mailOptions = {
         from: 'Iris Meijer',
-        to: 'ashlay.work@gmail.com',
+        to: 'zandwerven2015@gmail.com',
         subject: 'Contact formulier portfolio',
         text: `
           Hallo iris,
