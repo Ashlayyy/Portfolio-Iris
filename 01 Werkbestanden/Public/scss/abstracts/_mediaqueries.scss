@@ -164,11 +164,46 @@
     }
 }
 
-@media screen and (min-width: 1800px), screen and (min-device-width: 1800px) {
+@media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
     .spacing{
         display: block;
         width:100%;
         height:5%;
+    }
+
+    .main__index {
+        &__foto {
+            height: 55rem;
+            width: 75rem;
+        }
+    }
+
+    .main__dier {
+        &__foto {
+            &.foto__staand {
+                height: 65rem;
+                width: 45rem;
+            }
+    
+            &.foto__liggend {
+                height: 35rem;
+                width: 45rem;
+            }
+        }
+    }
+
+    .main__natuur {
+        &__foto {
+            height: 35rem;
+            width: 45rem;
+        }
+    }
+
+    .main__signature {
+        &__figure {       
+            height: 55rem;
+            width: 70rem;
+        }
     }
 }
 
