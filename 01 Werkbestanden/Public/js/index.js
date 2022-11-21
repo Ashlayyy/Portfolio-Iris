@@ -119,8 +119,11 @@ const modalImg = document.getElementById("modal-content");
 
 const span = document.getElementsByClassName("close")[0];
 
+const body = document.querySelector('body');
+
 if (modal) {
   modal.addEventListener("click", () => {
+    body.style.overflow = "auto";
     modal.style.display = "none";
   });
 }
@@ -128,6 +131,14 @@ if (modal) {
 if (img) {
   img.forEach((img) => {
     img.addEventListener("click", (event) => {
+      if (img.classList.contains('foto__staand')) {
+        modalImg.classList.add('foto__staand')
+      } else {
+        if(modalImg.classList.contains('foto__staand')) {
+          modalImg.classList.remove('foto__staand')
+        };
+      };
+      body.style.overflow = "hidden";
       modal.style.display = "block";
       modalImg.src = img.src;
     });
@@ -136,6 +147,7 @@ if (img) {
 
 if (span) {
   span.onclick = function () {
+    body.style.overflow = "auto";
     modal.style.display = "none";
   };
 }

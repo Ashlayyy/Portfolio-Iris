@@ -19,9 +19,12 @@
     display: block;
     width: 80%;
     max-width: 800px;
-  }
-  .modal-content {  
     @include animations.zoom;
+  }
+
+  .modal-content.foto__staand {
+    max-height: 90%;
+    width: auto;
   }
 
   .close {
