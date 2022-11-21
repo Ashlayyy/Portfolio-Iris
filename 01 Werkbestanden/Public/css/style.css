@@ -1076,11 +1076,6 @@ body {
   }
 }
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
-  .spacing {
-    display: block;
-    width: 100%;
-    height: 5%;
-  }
   .main__index__foto {
     height: 55rem;
     width: 75rem;
@@ -1090,7 +1085,7 @@ body {
     width: 45rem;
   }
   .main__dier__foto.foto__liggend {
-    height: 35rem;
+    height: 30rem;
     width: 45rem;
   }
   .main__natuur__foto {
