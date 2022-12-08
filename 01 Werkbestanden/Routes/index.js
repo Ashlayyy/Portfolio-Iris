@@ -67,7 +67,7 @@ router.post('/sendEmail', (req, res, next) => {
 
           Email: 
           ${req.body.email}
-
+ 
           Telefoon nummer: 
           ${req.body.telefoon}
 
