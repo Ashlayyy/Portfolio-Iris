@@ -48,6 +48,16 @@
             <img src="/img/Images - Portfolio/Images - Natuur/SIG/Zonsondergang-min.jpeg" alt=""
                 class="main__natuur__foto foto__clickable" />
 
+                            <img src="/img/Images - Portfolio/Images - Natuur/SIG/Bos-min.jpeg" alt=""
+                class="main__natuur__foto foto__clickable" />
+            <img src="/img/Images - Portfolio/Images - Natuur/SIG/Zonsondergang-min.jpeg" alt=""
+                class="main__natuur__foto foto__clickable" />
+
+                            <img src="/img/Images - Portfolio/Images - Natuur/Liggend/Evening Vibes-min.JPG" alt=""
+                class="main__natuur__foto foto__clickable" />
+
+                
+
 /* _article.scss */
 .main__signature {
     width: 100%;
