@@ -1,10 +1,8 @@
 #!/bin/sh
-
-# 1. Fetch the latest code from remote
 git pull -f origin main
 
-# 2. Install dependencies
+cd 01 WERKBESTANDEN/
+
 npm install
 
-# 3. Restart application
 pm2 restart Portfolio-iris
