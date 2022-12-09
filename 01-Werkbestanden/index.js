@@ -18,7 +18,7 @@ app.use('/html', express.static('Public/html'));
 
 app.use('/download', express.static('Public/download'))
 
-app.use('/img', express.static("../04 Archief/01 Foto's"));
+app.use('/img', express.static("../04-Archief/01 Foto's"));
 
 
 app.use(favicon(__dirname + '/favicon.ico'));
