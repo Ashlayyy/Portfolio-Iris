@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.submenu__dier {
+    @include mixins.standardCssDropdown;
+}
+
+.submenu__overmij {
+    @include mixins.standardCssDropdown;
+}

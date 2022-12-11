@@ -179,6 +179,61 @@ body {
   background-color: #bc3315;
 }
 
+.item__dier:hover .submenu__dier {
+  display: block;
+}
+.item__overmij:hover .submenu__overmij {
+  display: block;
+}
+
+.submenu__dier {
+  list-style: none;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  width: auto;
+  background: #000;
+}
+.submenu__dier__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__dier__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__dier__link:hover {
+  color: #e66842;
+}
+
+.submenu__overmij {
+  list-style: none;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  width: auto;
+  background: #000;
+}
+.submenu__overmij__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__overmij__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__overmij__link:hover {
+  color: #e66842;
+}
+
 .main__index {
   width: 100%;
   height: 70%;
@@ -327,66 +382,6 @@ body {
 .main__natuur__foto:hover {
   opacity: 0.7;
   cursor: pointer;
-}
-
-.main__signature {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-}
-.main__signature__title {
-  text-align: center;
-  width: 100%;
-  padding-top: 2rem;
-  margin-bottom: -4rem;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__signature__tekst {
-  width: 55ch;
-  min-height: 17rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.1rem;
-}
-.main__signature__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  width: 100%;
-  height: 100%;
-}
-.main__signature__figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 35rem;
-  width: 50rem;
-}
-.main__signature__foto {
-  border-radius: 1rem;
-  width: 90%;
-  height: 90%;
-  transition: 0.3s all;
-}
-.main__signature__foto:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-.main__signature__figureCaption {
-  font-size: 90%;
-  font-style: italic;
-  font-weight: 400;
-  padding: 2rem;
-  margin-bottom: 1rem;
 }
 
 .main__overmij {

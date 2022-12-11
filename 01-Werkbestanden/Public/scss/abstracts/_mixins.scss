@@ -48,3 +48,30 @@
         font-family: 'Andale Mono', sans-serif;
     }
 }
+
+@mixin standardCssDropdown {
+    list-style: none;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: auto;
+    background: map-get(variables.$fontColors, "blackColor");
+
+    &__item {
+        float: none;
+        overflow: hidden;
+        padding: 1.5rem;
+        font-size: 100%;
+    }
+
+    &__link {
+        color: map-get(variables.$fontColors, "whiteColor");
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 0;
+
+        &:hover {
+            color: map-get(variables.$fontColors, "orangeHoverColor");
+        }
+    }
+}
