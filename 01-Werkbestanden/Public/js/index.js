@@ -134,7 +134,7 @@ if (img) {
     img.addEventListener("click", (event) => {
       if (img.classList.contains('foto__staand')) {
         modalImg.classList.add('foto__staand')
-      } else {
+      } else if (img.classList.contains('')) {
         if(modalImg.classList.contains('foto__staand')) {
           modalImg.classList.remove('foto__staand')
         };
