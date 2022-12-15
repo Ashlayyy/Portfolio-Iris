@@ -778,6 +778,7 @@ body {
   gap: 7rem;
   padding: 4rem;
   background: #eee;
+  padding-bottom: 10rem;
 }
 .main__examenProduct__title {
   text-align: center;
