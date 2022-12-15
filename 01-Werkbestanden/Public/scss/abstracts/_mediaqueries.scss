@@ -82,22 +82,6 @@
         }
     }
 
-    .main__signature {
-        &__title {
-            font-size: 120%;
-        }
-
-        &__tekst {
-            width: 30ch;
-            font-size: 95%;
-        }
-
-        &__figure {
-            height: 30rem;
-            width: 40rem;
-        }
-    }
-
     .main__examenProduct {
         &__title {
             font-size: 125%;
@@ -167,8 +151,8 @@
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
     .main__index {
         &__foto {
-            height: 55rem;
-            width: 75rem;
+            height: 60rem;
+            width: 80rem;
         }
     }
 
@@ -190,13 +174,6 @@
         &__foto {
             height: 30rem;
             width: 45rem;
-        }
-    }
-
-    .main__signature {
-        &__figure {       
-            height: 55rem;
-            width: 70rem;
         }
     }
 }
