@@ -8,3 +8,7 @@
 .submenu__overmij {
     @include mixins.standardCssDropdown;
 }
+
+.submenu__product {
+    @include mixins.standardCssDropdown;
+}

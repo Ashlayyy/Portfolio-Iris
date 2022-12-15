@@ -188,6 +188,9 @@ body {
 .item__overmij:hover .submenu__overmij {
   display: block;
 }
+.item__product:hover .submenu__product {
+  display: block;
+}
 
 .submenu__dier {
   list-style: none;
@@ -234,6 +237,30 @@ body {
   padding-left: 0;
 }
 .submenu__overmij__link:hover {
+  color: #e66842;
+}
+
+.submenu__product {
+  list-style: none;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  width: auto;
+  background: #000;
+}
+.submenu__product__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__product__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__product__link:hover {
   color: #e66842;
 }
 
@@ -1066,7 +1093,7 @@ body {
 }
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
   .main__index__foto {
-    height: 40rem;
+    height: 50rem;
     width: 65rem;
   }
   .main__dier__foto.foto__staand, .main__artis__foto.foto__staand {

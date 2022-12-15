@@ -20,13 +20,17 @@ router.get('/product', (req, res, next) => {
   res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'product.html'));
 })
 
+router.get('/product/campagne', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../Public/html/extra/product', 'campagne.html'));
+})
+
 
 router.get('/overmij', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../Public/html', 'overmij.html'));
 })
 
 router.get('/artis', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/extra', 'artis.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/extra/dier', 'artis.html'));
 })
 
 
