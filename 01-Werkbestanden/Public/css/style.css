@@ -1066,8 +1066,8 @@ body {
 }
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
   .main__index__foto {
-    height: 60rem;
-    width: 80rem;
+    height: 40rem;
+    width: 65rem;
   }
   .main__dier__foto.foto__staand, .main__artis__foto.foto__staand {
     height: 65rem;
