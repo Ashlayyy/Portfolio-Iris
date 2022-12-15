@@ -27,6 +27,11 @@
     width: auto;
   }
 
+  .modal-content.foto__vierkant{
+    max-height: 600px;
+    max-width: 600px;
+  }
+
   .close {
     position: absolute;
     top: 15px;

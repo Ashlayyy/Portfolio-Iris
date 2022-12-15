@@ -188,7 +188,7 @@ body {
 .item__overmij:hover .submenu__overmij {
   display: block;
 }
-.item__product:hover .submenu__product {
+.item__vormgeving:hover .submenu__vormgeving {
   display: block;
 }
 
@@ -240,7 +240,7 @@ body {
   color: #e66842;
 }
 
-.submenu__product {
+.submenu__vormgeving {
   list-style: none;
   display: none;
   position: absolute;
@@ -248,19 +248,19 @@ body {
   width: auto;
   background: #000;
 }
-.submenu__product__item {
+.submenu__vormgeving__item {
   float: none;
   overflow: hidden;
   padding: 1.5rem;
   font-size: 100%;
 }
-.submenu__product__link {
+.submenu__vormgeving__link {
   color: #eee;
   text-decoration: none;
   padding: 1rem;
   padding-left: 0;
 }
-.submenu__product__link:hover {
+.submenu__vormgeving__link:hover {
   color: #e66842;
 }
 
@@ -458,7 +458,7 @@ body {
   opacity: 0.7;
 }
 
-.main__campagne {
+.main__vormgeving {
   width: 100%;
   height: 70%;
   text-align: center;
@@ -471,12 +471,12 @@ body {
   background: #eee;
   padding-bottom: 10rem;
 }
-.main__campagne__title {
+.main__vormgeving__title {
   text-align: center;
   width: 100%;
   font-family: "Bookman Old Style", sans-serif;
 }
-.main__campagne__gallery {
+.main__vormgeving__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -486,23 +486,23 @@ body {
   height: 100%;
   gap: 2rem;
 }
-.main__campagne__foto {
+.main__vormgeving__foto {
   border-radius: 1rem;
   transition: 0.3s all;
 }
-.main__campagne__foto.foto__staand {
+.main__vormgeving__foto.foto__staand {
   height: 65rem;
   width: 45rem;
 }
-.main__campagne__foto.foto__liggend {
+.main__vormgeving__foto.foto__liggend {
   height: 35rem;
   width: 50rem;
 }
-.main__campagne__foto.foto__vierkant {
+.main__vormgeving__foto.foto__vierkant {
   height: 45rem;
   width: 45rem;
 }
-.main__campagne__foto:hover {
+.main__vormgeving__foto:hover {
   opacity: 0.7;
 }
 
@@ -1023,6 +1023,11 @@ body {
 .modal-content.foto__staand {
   max-height: 90%;
   width: auto;
+}
+
+.modal-content.foto__vierkant {
+  max-height: 600px;
+  max-width: 600px;
 }
 
 .close {

@@ -20,8 +20,12 @@ router.get('/product', (req, res, next) => {
   res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'product.html'));
 })
 
-router.get('/product/campagne', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/extra/product', 'campagne.html'));
+router.get('/vormgeving', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'vormgeving.html'));
+})
+
+router.get('/photoshop', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'photoshop.html'));
 })
 
 

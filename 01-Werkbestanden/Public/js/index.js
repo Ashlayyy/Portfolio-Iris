@@ -134,11 +134,15 @@ if (img) {
     img.addEventListener("click", (event) => {
       if (img.classList.contains('foto__staand')) {
         modalImg.classList.add('foto__staand')
-      } else if (img.classList.contains('')) {
-        if(modalImg.classList.contains('foto__staand')) {
-          modalImg.classList.remove('foto__staand')
-        };
-      };
+      } else if (img.classList.contains('foto__vierkant')) {
+        modalImg.classList.add('foto__vierkant')
+      } else {
+        if (modalImg.classList.contains('foto__staand')) {
+          modalImg.classList.remove('foto__staand');
+        } else if (modalImg.classList.contains('foto__vierkant')) {
+          modalImg.classList.remove('foto__vierkant');
+        }
+      }
       body.style.overflow = "hidden";
       modal.style.display = "block";
       modalImg.src = img.src;
