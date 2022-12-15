@@ -68,6 +68,7 @@ if (examen2_button) {
   });
 }
 
+//form submit
 const formSubmit = document.getElementById("submitButton");
 if (formSubmit) {
   formSubmit.addEventListener("click", (event) => {
@@ -151,3 +152,11 @@ if (span) {
     modal.style.display = "none";
   };
 }
+
+
+//logo button
+const logo = document.getElementsByClassName('navigation__img')[0];
+
+logo.addEventListener('click', (e) => {
+  location.replace('/');
+})

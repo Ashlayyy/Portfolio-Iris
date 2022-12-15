@@ -19,6 +19,10 @@
     &__img {
         height: 7rem;
         width: 7rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__list {

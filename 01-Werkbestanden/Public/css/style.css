@@ -135,6 +135,9 @@ body {
   height: 7rem;
   width: 7rem;
 }
+.navigation__img:hover {
+  cursor: pointer;
+}
 .navigation__list {
   margin-left: 3rem;
   display: flex;
@@ -1017,17 +1020,6 @@ body {
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  .main__signature__title {
-    font-size: 120%;
-  }
-  .main__signature__tekst {
-    width: 30ch;
-    font-size: 95%;
-  }
-  .main__signature__figure {
-    height: 30rem;
-    width: 40rem;
-  }
   .main__examenProduct__title {
     font-size: 125%;
   }
@@ -1074,24 +1066,20 @@ body {
 }
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
   .main__index__foto {
-    height: 55rem;
-    width: 75rem;
+    height: 60rem;
+    width: 80rem;
   }
-  .main__dier__foto.foto__staand {
+  .main__dier__foto.foto__staand, .main__artis__foto.foto__staand {
     height: 65rem;
     width: 45rem;
   }
-  .main__dier__foto.foto__liggend {
+  .main__dier__foto.foto__liggend, .main__artis__foto.foto__liggend {
     height: 30rem;
     width: 45rem;
   }
   .main__natuur__foto {
     height: 30rem;
     width: 45rem;
-  }
-  .main__signature__figure {
-    height: 55rem;
-    width: 70rem;
   }
 }
 

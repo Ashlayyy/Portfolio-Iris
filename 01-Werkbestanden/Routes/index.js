@@ -9,11 +9,15 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/dier', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html', 'dier.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'dier.html'));
 })
 
 router.get('/natuur', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html', 'natuur.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'natuur.html'));
+})
+
+router.get('/product', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'product.html'));
 })
 
 
