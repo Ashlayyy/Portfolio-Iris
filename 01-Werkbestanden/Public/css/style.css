@@ -497,7 +497,7 @@ body {
   flex-basis: 33.333333%;
   flex-basis: 50%;
   flex-wrap: wrap;
-  width: 100%;
+  width: 75%;
   height: 100%;
   gap: 2rem;
 }
