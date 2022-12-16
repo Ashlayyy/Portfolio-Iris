@@ -12,7 +12,7 @@ app.use(bodyParser.raw());
 
 app.use('/', require('./Routes/index'));
 
-app.use('/css', express.static('Public/css'));
+app.use('/css', express.static('Public/css')); 
 app.use('/js', express.static('Public/js'));
 app.use('/html', express.static('Public/html'));
  
