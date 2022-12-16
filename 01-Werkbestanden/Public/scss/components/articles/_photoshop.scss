@@ -15,7 +15,13 @@
     &__title {
         text-align: center;
         width: 100%;
-        @include mixins.fontFamily('Bookman Old Style')
+        @include mixins.fontFamily('Bookman Old Style');
+    }
+
+    &__subTekst {
+        text-align: center;
+        width: 100%;
+        @include mixins.fontFamily('Andale Mono');
     }
 
     &__gallery {

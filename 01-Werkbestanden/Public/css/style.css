@@ -938,6 +938,11 @@ body {
   width: 100%;
   font-family: "Bookman Old Style", sans-serif;
 }
+.main__photoshop__subTekst {
+  text-align: center;
+  width: 100%;
+  font-family: "Andale Mono", sans-serif;
+}
 .main__photoshop__gallery {
   display: flex;
   flex-wrap: wrap;
