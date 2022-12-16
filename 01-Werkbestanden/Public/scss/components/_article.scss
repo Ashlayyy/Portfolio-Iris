@@ -185,9 +185,7 @@
 
     &__gallery {
         @include mixins.flexGallery;
-        flex-basis: 50%;
-        flex-wrap: wrap;
-        width: 75%;
+        width: 70%;
         height: 100%;
         gap: 2rem;
     }

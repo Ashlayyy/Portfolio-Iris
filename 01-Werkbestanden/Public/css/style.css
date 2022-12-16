@@ -495,9 +495,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-basis: 33.333333%;
-  flex-basis: 50%;
-  flex-wrap: wrap;
-  width: 75%;
+  width: 70%;
   height: 100%;
   gap: 2rem;
 }
