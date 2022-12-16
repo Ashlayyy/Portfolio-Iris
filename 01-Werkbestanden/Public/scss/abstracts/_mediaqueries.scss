@@ -232,6 +232,10 @@
     }
 
     .main__vormgeving {
+        &__galery {
+            width: 70%;
+        }
+
         &__foto {
             &.foto__staand { 
                 height: 82.5rem;
@@ -242,6 +246,12 @@
                 height: 52.5rem;
                 width: 52.5rem;
             }
+        }
+    }
+
+    .main__photoshop {
+        &__galery {
+            width: 70%;
         }
     }
 }
