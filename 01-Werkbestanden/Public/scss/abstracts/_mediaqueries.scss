@@ -249,6 +249,20 @@
             width: 45rem;
         }
     }
+
+    .main__vormgeving {
+        &__foto {
+            &.foto__staand {
+                height: 65rem;
+                width: 45rem;
+            }
+    
+            &.foto__vierkant {
+                height: 45rem;
+                width: 45rem;
+            }
+        }
+    }
 }
 
 

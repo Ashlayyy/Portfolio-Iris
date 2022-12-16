@@ -1316,6 +1316,14 @@ body {
     height: 30rem;
     width: 45rem;
   }
+  .main__vormgeving__foto.foto__staand {
+    height: 65rem;
+    width: 45rem;
+  }
+  .main__vormgeving__foto.foto__vierkant {
+    height: 45rem;
+    width: 45rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
