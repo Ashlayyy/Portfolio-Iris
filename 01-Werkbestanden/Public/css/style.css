@@ -543,7 +543,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-basis: 33.333333%;
-  width: 100%;
+  width: 70%;
   height: 100%;
   gap: 2rem;
 }

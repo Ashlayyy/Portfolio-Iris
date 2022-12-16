@@ -233,7 +233,7 @@
 
     &__gallery {
         @include mixins.flexGallery;
-        width: 100%;
+        width: 70%;
         height: 100%;
         gap: 2rem;
     }
