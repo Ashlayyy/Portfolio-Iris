@@ -940,7 +940,7 @@ body {
 }
 .main__photoshop__subTekst {
   text-align: center;
-  width: 100%;
+  width: 50ch;
   font-family: "Andale Mono", sans-serif;
 }
 .main__photoshop__gallery {
@@ -1242,6 +1242,9 @@ body {
   }
   .main__photoshop__gallery {
     width: 70%;
+  }
+  .main__photoshop__subTekst {
+    width: 60ch;
   }
 }
 

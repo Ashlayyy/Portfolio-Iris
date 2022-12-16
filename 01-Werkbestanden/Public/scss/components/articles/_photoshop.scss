@@ -20,7 +20,7 @@
 
     &__subTekst {
         text-align: center;
-        width: 100%;
+        width: 50ch;
         @include mixins.fontFamily('Andale Mono');
     }
 
