@@ -88,17 +88,3 @@
         }
     }
 }
-
-.item {
-    &__dier:hover .submenu__dier{
-        display: block;
-    }
-
-    &__overmij:hover .submenu__overmij{
-        display: block;
-    }
-
-    &__vormgeving:hover .submenu__vormgeving{
-        display: block;
-    }
-}

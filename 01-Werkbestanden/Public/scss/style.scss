@@ -4,9 +4,20 @@
 @use "components/header";
 @use "components/navigation";
 @use 'components/submenu';
-@use "components/article";
 @use "components/footer";
 @use "components/button";
 @use "components/modal";
+
+@use "./components/articles/artis";
+@use "./components/articles/contact";
+@use "./components/articles/dier";
+@use "./components/articles/examen3D";
+@use "./components/articles/examenProduct";
+@use "./components/articles/index";
+@use "./components/articles/natuur";
+@use "./components/articles/overMij";
+@use "./components/articles/photoshop";
+@use "./components/articles/product";
+@use "./components/articles/vormgeving";
 
 @use "abstracts/mediaqueries";

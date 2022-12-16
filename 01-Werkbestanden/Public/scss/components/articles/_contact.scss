@@ -1,0 +1,178 @@
+@use "../../abstracts/variables";
+@use "../../abstracts/mixins";
+@use "../../abstracts/fonts";
+
+.main__contact {
+    height: 135rem;
+    width: 100%;
+    padding: 4rem;
+    background: map-get(variables.$colors, "whiteColor");
+
+    &__title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5rem;
+        @include mixins.fontFamily('Bookman Old Style');
+    }
+
+    &__gegevens, &__socialTitle {
+        padding-bottom: 2rem;
+        text-decoration: underline;
+        font-size: 125%;
+        @include mixins.fontFamily('Bookman Old Style');
+    }
+
+    &__wrapper {
+        @include mixins.flexCenter;
+        flex-direction: row;
+        height: 40%;
+        width: 100%;
+        gap: 5rem;
+    }
+    &__methods {
+        @include mixins.flexCenter;
+        align-items:flex-start;
+        height: 50%;   
+        text-align: left;
+        gap: 1rem;
+    }
+
+    &__contentWrapper {
+        @include mixins.flexCenter;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    &__linkWrapper {
+        @include mixins.flexCenter;
+        flex-direction: row;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    &__tijdenWrapper {
+        @include mixins.flexCenter;
+        gap: 3rem;
+    }
+
+    &__tijden {
+        width: 50ch;
+        font-size: 80%;
+        background: map-get(variables.$colors, "grayColor");
+        padding: 4rem;
+        border-radius: 1rem;
+    }
+
+    &__downloadCvButton {
+        @include mixins.blackButton;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: map-get(variables.$fontColors, "blackColor");
+        transition: 0.3s all;
+
+        &:hover {
+            text-decoration: underline;
+            color: map-get(variables.$fontColors, "grayHoverColor");
+        }
+    }
+
+
+    &__formArticle {
+        height: 50%;
+        width: 100%;
+        background: map-get(variables.$colors, "whiteColor");
+        @include mixins.flexCenter;
+        gap: 2rem
+    }
+
+    &__form {
+        @include mixins.flexCenter;
+        align-items: flex-start;
+        gap: 2rem;
+
+        &Title {
+            @include mixins.fontFamily('Bookman Old Style');
+        }
+    }
+
+    &__inputLabel {
+        font-weight: bold;
+        font-size: 110%;
+    }
+
+    &__tekstInput {
+        width: 20rem; 
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: none;
+        background: map-get(variables.$colors, "pureWhiteColor");
+        border-bottom: 0.1rem solid transparent;
+
+        &:focus {
+            border-bottom: 0.1rem solid map-get(variables.$colors, "blackColor");
+        }
+    }
+
+    &__emailInput {
+        width: 42.5rem; 
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: none;
+        background: map-get(variables.$colors, "pureWhiteColor");
+        border-bottom: 0.1rem solid transparent;
+
+        &:focus {
+            border-bottom: 0.1rem solid map-get(variables.$colors, "blackColor");
+        }
+    }
+
+    &__telefoonInput {
+        width: 42.5rem; 
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: none;
+        background: map-get(variables.$colors, "pureWhiteColor");
+        border-bottom: 0.1rem solid transparent;
+
+        &:focus {
+            border-bottom: 0.1rem solid map-get(variables.$colors, "blackColor");
+        }
+    }
+
+    &__berichtInput {
+        width: 42.5rem; 
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: none;
+        background: map-get(variables.$colors, "pureWhiteColor");
+        border-bottom: 0.1rem solid transparent;
+        resize: none;
+
+        &:focus {
+            border-bottom: 0.1rem solid map-get(variables.$colors, "blackColor");
+        }
+    }
+    &__formButtonWrapper {
+        @include mixins.flexCenter;
+        width: 100%;
+    }
+
+    &__formSubmitButton {
+        width: 50%;
+        @include mixins.blackButton;
+    }
+}

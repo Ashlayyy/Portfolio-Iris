@@ -1,0 +1,27 @@
+@use "../../abstracts/variables";
+@use "../../abstracts/mixins";
+@use "../../abstracts/fonts";
+
+.main__examen3D {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    @include mixins.flexCenter;
+    gap: 7rem;
+    padding: 4rem;
+    background: map-get(variables.$colors, 'whiteColor');
+    
+    &__title {
+        text-align: center;
+        width: 100%;
+        font-size: 200%;
+        font-weight: bold;
+        @include mixins.fontFamily('Bookman Old Style');
+    }
+
+    &__paragraph {
+        text-decoration: underline;
+        letter-spacing: 0.1rem;
+        font-size: 80%;
+    }
+}

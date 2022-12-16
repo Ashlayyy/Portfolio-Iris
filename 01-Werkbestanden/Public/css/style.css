@@ -195,6 +195,30 @@ body {
   background-color: #bc3315;
 }
 
+.submenu__dier, .submenu__overmij, .submenu__vormgeving {
+  list-style: none;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  width: auto;
+  background: #000;
+}
+.submenu__dier__item, .submenu__overmij__item, .submenu__vormgeving__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__dier__link, .submenu__overmij__link, .submenu__vormgeving__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__dier__link:hover, .submenu__overmij__link:hover, .submenu__vormgeving__link:hover {
+  color: #e66842;
+}
+
 .item__dier:hover .submenu__dier {
   display: block;
 }
@@ -205,79 +229,112 @@ body {
   display: block;
 }
 
-.submenu__dier {
-  list-style: none;
-  display: none;
-  position: absolute;
-  overflow: auto;
-  width: auto;
-  background: #000;
-}
-.submenu__dier__item {
-  float: none;
-  overflow: hidden;
-  padding: 1.5rem;
-  font-size: 100%;
-}
-.submenu__dier__link {
-  color: #eee;
-  text-decoration: none;
-  padding: 1rem;
-  padding-left: 0;
-}
-.submenu__dier__link:hover {
-  color: #e66842;
+.footer {
+  width: 100%;
+  height: 15rem;
+  color: rgb(105, 105, 105);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 0.2rem;
+  bottom: 0;
 }
 
-.submenu__overmij {
-  list-style: none;
-  display: none;
-  position: absolute;
-  overflow: auto;
-  width: auto;
-  background: #000;
-}
-.submenu__overmij__item {
-  float: none;
-  overflow: hidden;
-  padding: 1.5rem;
-  font-size: 100%;
-}
-.submenu__overmij__link {
-  color: #eee;
-  text-decoration: none;
-  padding: 1rem;
-  padding-left: 0;
-}
-.submenu__overmij__link:hover {
-  color: #e66842;
+.button__scrollToTop {
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
 }
 
-.submenu__vormgeving {
-  list-style: none;
-  display: none;
-  position: absolute;
-  overflow: auto;
-  width: auto;
-  background: #000;
-}
-.submenu__vormgeving__item {
-  float: none;
-  overflow: hidden;
-  padding: 1.5rem;
-  font-size: 100%;
-}
-.submenu__vormgeving__link {
+.whiteBtn {
   color: #eee;
-  text-decoration: none;
-  padding: 1rem;
-  padding-left: 0;
-}
-.submenu__vormgeving__link:hover {
-  color: #e66842;
 }
 
-.main__index {
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+.modal-content.foto__staand {
+  max-height: 90%;
+  width: auto;
+}
+
+.modal-content.foto__vierkant {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main__artis {
   width: 100%;
   height: 70%;
   text-align: center;
@@ -289,12 +346,12 @@ body {
   padding: 4rem;
   background: #eee;
 }
-.main__index__title {
+.main__artis__title {
   text-align: center;
   width: 100%;
   font-family: "Bookman Old Style", sans-serif;
 }
-.main__index__gallery {
+.main__artis__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -305,56 +362,16 @@ body {
   height: 100%;
   gap: 2rem;
 }
-.main__index__foto {
-  height: 35rem;
-  width: 55rem;
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-
-.main__dier {
-  width: 100%;
-  height: 70%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-}
-.main__dier__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__dier__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-}
-.main__dier__foto {
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-.main__dier__foto.foto__staand {
+.main__artis__foto {
   height: 55rem;
   width: 35rem;
+  border-radius: 1rem;
+  transition: 0.3s all;
 }
-.main__dier__foto.foto__liggend {
-  height: 25rem;
-  width: 35rem;
-}
-.main__dier__foto:hover {
+.main__artis__foto:hover {
   opacity: 0.7;
 }
-.main__dier__artisButton {
+.main__artis__artisButton {
   width: 100%;
   height: 10rem;
   padding: 5rem;
@@ -365,7 +382,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.main__dier__button {
+.main__artis__button {
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
   background-color: #000;
   border-radius: 4rem;
@@ -379,259 +396,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.main__dier__button:hover {
+.main__artis__button:hover {
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
   background-color: #000;
 }
-.main__dier__button:active {
-  position: relative;
-  top: 1px;
-}
-
-.main__natuur {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-}
-.main__natuur__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__natuur__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-}
-.main__natuur__foto {
-  height: 25rem;
-  width: 35rem;
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-.main__natuur__foto:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.main__product {
-  width: 100%;
-  height: 70%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-  padding-bottom: 10rem;
-}
-.main__product__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__product__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-}
-.main__product__foto {
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-.main__product__foto.foto__staand {
-  height: 55rem;
-  width: 35rem;
-}
-.main__product__foto.foto__liggend {
-  height: 35rem;
-  width: 50rem;
-}
-.main__product__foto:hover {
-  opacity: 0.7;
-}
-
-.main__vormgeving {
-  width: 100%;
-  height: 70%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-  padding-bottom: 10rem;
-}
-.main__vormgeving__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__vormgeving__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-}
-.main__vormgeving__foto {
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-.main__vormgeving__foto.foto__staand {
-  height: 82.5rem;
-  width: 52.5rem;
-}
-.main__vormgeving__foto.foto__liggend {
-  height: 35rem;
-  width: 52.5rem;
-}
-.main__vormgeving__foto.foto__vierkant {
-  height: 45rem;
-  width: 45rem;
-}
-.main__vormgeving__foto:hover {
-  opacity: 0.7;
-}
-
-.main__photoshop {
-  width: 100%;
-  height: 70%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 7rem;
-  padding: 4rem;
-  background: #eee;
-  padding-bottom: 10rem;
-}
-.main__photoshop__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__photoshop__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 33.333333%;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-}
-.main__photoshop__foto {
-  border-radius: 1rem;
-  transition: 0.3s all;
-}
-.main__photoshop__foto.foto__staand {
-  height: 82.5rem;
-  width: 52.5rem;
-}
-.main__photoshop__foto.foto__liggend {
-  height: 35rem;
-  width: 52.5rem;
-}
-.main__photoshop__foto.foto__vierkant {
-  height: 52.5rem;
-  width: 52.5rem;
-}
-.main__photoshop__foto:hover {
-  opacity: 0.7;
-}
-
-.main__overmij {
-  width: 100%;
-  height: 75rem;
-  padding: 4rem;
-  background: #eee;
-}
-.main__overmij__title {
-  text-align: center;
-  width: 100%;
-  font-family: "Bookman Old Style", sans-serif;
-}
-.main__overmij__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-direction: row;
-  gap: 5rem;
-  width: 100%;
-  height: 75%;
-}
-.main__overmij__foto {
-  height: 40rem;
-  width: 60rem;
-  border-radius: 1rem;
-}
-.main__overmij__tekst {
-  width: 50ch;
-}
-.main__overmij__paragraph {
-  color: #000;
-  font-weight: 500;
-  line-height: 2.2rem;
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
-}
-.main__overmij__buttonsWrapper {
-  height: 10rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-direction: row;
-  gap: 10rem;
-}
-.main__overmij__examenButton {
-  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
-  background-color: #000;
-  border-radius: 4rem;
-  border: 0.1rem solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #dbdbdb;
-  font-family: Arial;
-  font-size: 1.8rem;
-  padding: 1.5rem 2.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.main__overmij__examenButton:hover {
-  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
-  background-color: #000;
-}
-.main__overmij__examenButton:active {
+.main__artis__button:active {
   position: relative;
   top: 1px;
 }
@@ -849,7 +618,7 @@ body {
   top: 1px;
 }
 
-.main__artis {
+.main__dier {
   width: 100%;
   height: 70%;
   text-align: center;
@@ -861,32 +630,37 @@ body {
   padding: 4rem;
   background: #eee;
 }
-.main__artis__title {
+.main__dier__title {
   text-align: center;
   width: 100%;
   font-family: "Bookman Old Style", sans-serif;
 }
-.main__artis__gallery {
+.main__dier__gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-basis: 33.333333%;
-  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 2rem;
 }
-.main__artis__foto {
-  height: 55rem;
-  width: 35rem;
+.main__dier__foto {
   border-radius: 1rem;
   transition: 0.3s all;
 }
-.main__artis__foto:hover {
+.main__dier__foto.foto__staand {
+  height: 55rem;
+  width: 35rem;
+}
+.main__dier__foto.foto__liggend {
+  height: 25rem;
+  width: 35rem;
+}
+.main__dier__foto:hover {
   opacity: 0.7;
 }
-.main__artis__artisButton {
+.main__dier__artisButton {
   width: 100%;
   height: 10rem;
   padding: 5rem;
@@ -897,7 +671,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.main__artis__button {
+.main__dier__button {
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
   background-color: #000;
   border-radius: 4rem;
@@ -911,13 +685,38 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.main__artis__button:hover {
+.main__dier__button:hover {
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
   background-color: #000;
 }
-.main__artis__button:active {
+.main__dier__button:active {
   position: relative;
   top: 1px;
+}
+
+.main__examen3D {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+}
+.main__examen3D__title {
+  text-align: center;
+  width: 100%;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__examen3D__paragraph {
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  font-size: 80%;
 }
 
 .main__examenProduct {
@@ -978,7 +777,7 @@ body {
   opacity: 0.7;
 }
 
-.main__examen3D {
+.main__index {
   width: 100%;
   height: 70%;
   text-align: center;
@@ -990,154 +789,275 @@ body {
   padding: 4rem;
   background: #eee;
 }
-.main__examen3D__title {
+.main__index__title {
   text-align: center;
   width: 100%;
-  font-size: 200%;
-  font-weight: bold;
   font-family: "Bookman Old Style", sans-serif;
 }
-.main__examen3D__paragraph {
-  text-decoration: underline;
-  letter-spacing: 0.1rem;
-  font-size: 80%;
+.main__index__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.main__index__foto {
+  height: 35rem;
+  width: 55rem;
+  border-radius: 1rem;
+  transition: 0.3s all;
 }
 
-.footer {
+.main__natuur {
   width: 100%;
-  height: 15rem;
-  color: rgb(105, 105, 105);
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+}
+.main__natuur__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__natuur__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.main__natuur__foto {
+  height: 25rem;
+  width: 35rem;
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+.main__natuur__foto:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.main__overmij {
+  width: 100%;
+  height: 75rem;
+  padding: 4rem;
+  background: #eee;
+}
+.main__overmij__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__overmij__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+  height: 75%;
+}
+.main__overmij__foto {
+  height: 40rem;
+  width: 60rem;
+  border-radius: 1rem;
+}
+.main__overmij__tekst {
+  width: 50ch;
+}
+.main__overmij__paragraph {
+  color: #000;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+.main__overmij__buttonsWrapper {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 10rem;
+}
+.main__overmij__examenButton {
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+  border-radius: 4rem;
+  border: 0.1rem solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #dbdbdb;
+  font-family: Arial;
+  font-size: 1.8rem;
+  padding: 1.5rem 2.4rem;
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 80%;
-  letter-spacing: 0.2rem;
-  bottom: 0;
+}
+.main__overmij__examenButton:hover {
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+}
+.main__overmij__examenButton:active {
+  position: relative;
+  top: 1px;
 }
 
-.button__scrollToTop {
-  border: none;
-  color: #000;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 48px;
-  width: 48px;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 100;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: all 0.5s ease;
+.main__photoshop {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+  padding-bottom: 10rem;
 }
-
-.whiteBtn {
-  color: #eee;
+.main__photoshop__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
-
-.showBtn {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
+.main__photoshop__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  gap: 2rem;
+}
+.main__photoshop__foto {
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+.main__photoshop__foto.foto__staand {
+  height: 82.5rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto.foto__liggend {
+  height: 35rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto.foto__vierkant {
+  height: 52.5rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto:hover {
+  opacity: 0.7;
 }
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 800px;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.main__product {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+  padding-bottom: 10rem;
 }
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+.main__product__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
 }
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-.modal-content.foto__staand {
-  max-height: 90%;
-  width: auto;
-}
-
-.modal-content.foto__vierkant {
-  max-height: 600px;
-  max-width: 600px;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* The Modal (background) */
-.modal__email {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
+.main__product__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  gap: 2rem;
 }
-.modal__email__content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid;
-  width: 80%; /* Could be more or less, depending on screen size */
+.main__product__foto {
+  border-radius: 1rem;
+  transition: 0.3s all;
 }
-.modal__email__close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.main__product__foto.foto__staand {
+  height: 55rem;
+  width: 35rem;
 }
-.modal__email__close:hover, .modal__email__close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.main__product__foto.foto__liggend {
+  height: 35rem;
+  width: 50rem;
+}
+.main__product__foto:hover {
+  opacity: 0.7;
+}
+
+.main__vormgeving {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+  padding-bottom: 10rem;
+}
+.main__vormgeving__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__vormgeving__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.main__vormgeving__foto {
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+.main__vormgeving__foto.foto__staand {
+  height: 82.5rem;
+  width: 52.5rem;
+}
+.main__vormgeving__foto.foto__liggend {
+  height: 35rem;
+  width: 52.5rem;
+}
+.main__vormgeving__foto.foto__vierkant {
+  height: 45rem;
+  width: 45rem;
+}
+.main__vormgeving__foto:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
