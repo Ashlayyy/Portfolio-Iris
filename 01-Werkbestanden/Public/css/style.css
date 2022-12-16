@@ -971,7 +971,7 @@ body {
   width: 45rem;
 }
 .main__examenProduct__foto.foto__liggend__detail {
-  height: 17.5rem;
+  height: 15rem;
   width: 40rem;
 }
 .main__examenProduct__foto:hover {
@@ -1166,10 +1166,35 @@ body {
     flex-direction: column;
     gap: 2rem;
   }
-  .spacing {
-    display: none;
+  .navigation {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .navigation__img {
+    padding-left: 2rem;
+    width: auto;
+  }
+  .navigation__list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .navigation__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 5%;
+  }
+  .navigation__subWrapper {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navigation__buttonWrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
   }
 }
 @media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
@@ -1186,25 +1211,11 @@ body {
   .main__contact__tekstInput {
     width: 42.5rem;
   }
-  .spacing {
-    display: none;
-    width: 0;
-    height: 0;
-  }
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
   .main__index__foto {
     height: 20rem;
     width: 30rem;
-  }
-  .navigation {
-    flex-wrap: wrap;
-    height: auto;
-  }
-  .navigation__list {
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2rem;
   }
   .main__examenProduct__title {
     font-size: 125%;
@@ -1212,6 +1223,18 @@ body {
   .main__examenProduct__paragraph {
     font-size: 90%;
     width: 35ch;
+  }
+  .main__examenProduct__foto.foto__staand {
+    height: 55rem;
+    width: 35rem;
+  }
+  .main__examenProduct__foto.foto__liggend {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__examenProduct__foto.foto__liggend__detail {
+    height: 10em;
+    width: 34rem;
   }
   .main__overmij__tekst {
     width: 30ch;
@@ -1231,10 +1254,41 @@ body {
     text-align: center;
     font-size: 95%;
   }
-  .spacing {
-    display: none;
-    width: 100%;
-    height: 5%;
+  .main__product__foto.foto__staand {
+    height: 55rem;
+    width: 35rem;
+  }
+  .main__product__foto.foto__liggend {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__product__foto.foto__vierkant {
+    height: 35rem;
+    width: 35rem;
+  }
+  .main__vormgeving__foto.foto__staand {
+    height: 55rem;
+    width: 35rem;
+  }
+  .main__vormgeving__foto.foto__liggend {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__vormgeving__foto.foto__vierkant {
+    height: 35rem;
+    width: 35rem;
+  }
+  .main__photoshop__foto.foto__staand {
+    height: 55rem;
+    width: 35rem;
+  }
+  .main__photoshop__foto.foto__liggend {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__photoshop__foto.foto__vierkant {
+    height: 35rem;
+    width: 35rem;
   }
 }
 @media screen and (max-width: 600px), screen and (max-device-width: 600px) {
@@ -1243,11 +1297,6 @@ body {
   }
   .navigation__link {
     font-size: 100%;
-  }
-  .spacing {
-    display: none;
-    width: 100%;
-    height: 5%;
   }
 }
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
