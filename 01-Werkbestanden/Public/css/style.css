@@ -52,7 +52,7 @@ body {
 .figure {
   width: 100%;
   height: 65rem;
-  background: url("/img/Images - Index/Church-extra-small-min.png");
+  background: url("/img/Images - General/Church-extra-small-min.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -491,18 +491,66 @@ body {
   transition: 0.3s all;
 }
 .main__vormgeving__foto.foto__staand {
-  height: 65rem;
-  width: 45rem;
+  height: 82.5rem;
+  width: 52.5rem;
 }
 .main__vormgeving__foto.foto__liggend {
   height: 35rem;
-  width: 50rem;
+  width: 52.5rem;
 }
 .main__vormgeving__foto.foto__vierkant {
   height: 45rem;
   width: 45rem;
 }
 .main__vormgeving__foto:hover {
+  opacity: 0.7;
+}
+
+.main__photoshop {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+  padding-bottom: 10rem;
+}
+.main__photoshop__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__photoshop__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.main__photoshop__foto {
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+.main__photoshop__foto.foto__staand {
+  height: 82.5rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto.foto__liggend {
+  height: 35rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto.foto__vierkant {
+  height: 52.5rem;
+  width: 52.5rem;
+}
+.main__photoshop__foto:hover {
   opacity: 0.7;
 }
 
