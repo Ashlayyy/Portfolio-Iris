@@ -130,6 +130,19 @@ body {
   align-items: center;
   padding-bottom: 2rem;
   padding: 2rem;
+  width: 100%;
+}
+.navigation__subWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.navigation__buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
 }
 .navigation__img {
   height: 7rem;
