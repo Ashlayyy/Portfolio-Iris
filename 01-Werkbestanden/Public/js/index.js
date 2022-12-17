@@ -167,3 +167,12 @@ const logo = document.getElementsByClassName('navigation__img')[0];
 logo.addEventListener('click', (e) => {
   location.replace('/');
 })
+
+
+//artis button
+const button_zwartWit = document.getElementById("psZwartWit__button");
+if (button_zwartWit) {
+  button_zwartWit.addEventListener("click", function (event) {
+    window.location.href = "/photoshop/ingekleurd";
+  });
+}

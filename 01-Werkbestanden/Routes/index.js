@@ -28,6 +28,10 @@ router.get('/photoshop', (req, res, next) => {
   res.sendFile(path.join(__dirname, '../Public/html/Pagina', 'photoshop.html'));
 })
 
+router.get('/photoshop/ingekleurd', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '../Public/html/extra/photoshop', 'ingekleurd.html'));
+})
+
 
 router.get('/overmij', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../Public/html', 'overmij.html'));

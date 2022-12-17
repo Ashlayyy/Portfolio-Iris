@@ -189,7 +189,8 @@
         }
     }
 
-    .main__photoshop {
+    .main__photoshop, 
+    .main__ingekleurd {
         &__foto {
             &.foto__staand {
                 height: 55rem;
@@ -277,7 +278,8 @@
         }
     }
 
-    .main__photoshop {
+    .main__photoshop, 
+    .main__ingekleurd {
         &__gallery {
             width: 70%;
         }

@@ -938,6 +938,14 @@ body {
   width: 100%;
   font-family: "Bookman Old Style", sans-serif;
 }
+.main__photoshop__tekstWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
 .main__photoshop__subTekst {
   text-align: center;
   width: 50ch;
@@ -970,6 +978,108 @@ body {
   width: 52.5rem;
 }
 .main__photoshop__foto:hover {
+  opacity: 0.7;
+}
+.main__photoshop__buttonWrapper {
+  width: 100%;
+  height: 10rem;
+  padding: 5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.main__photoshop__button {
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+  border-radius: 4rem;
+  border: 0.1rem solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #dbdbdb;
+  font-family: Arial;
+  font-size: 1.8rem;
+  padding: 1.5rem 2.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main__photoshop__button:hover {
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+}
+.main__photoshop__button:active {
+  position: relative;
+  top: 1px;
+}
+.main__photoshop__dotted {
+  margin-top: -4rem;
+  border: 2px dotted #000000;
+  border-style: none none dotted;
+  color: #fff;
+  background-color: #fff;
+  width: 75%;
+}
+
+.main__ingekleurd {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem;
+  background: #eee;
+  padding-bottom: 10rem;
+}
+.main__ingekleurd__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.main__ingekleurd__tekstWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.main__ingekleurd__subTekst {
+  text-align: center;
+  width: 50ch;
+  font-family: "Andale Mono", sans-serif;
+}
+.main__ingekleurd__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33.333333%;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.main__ingekleurd__foto {
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+.main__ingekleurd__foto.foto__staand {
+  height: 82.5rem;
+  width: 52.5rem;
+}
+.main__ingekleurd__foto.foto__liggend {
+  height: 35rem;
+  width: 52.5rem;
+}
+.main__ingekleurd__foto.foto__vierkant {
+  height: 52.5rem;
+  width: 52.5rem;
+}
+.main__ingekleurd__foto:hover {
   opacity: 0.7;
 }
 
@@ -1203,19 +1313,23 @@ body {
     height: 35rem;
     width: 35rem;
   }
-  .main__photoshop__foto.foto__staand {
+  .main__photoshop__foto.foto__staand,
+.main__ingekleurd__foto.foto__staand {
     height: 55rem;
     width: 35rem;
   }
-  .main__photoshop__foto.foto__liggend {
+  .main__photoshop__foto.foto__liggend,
+.main__ingekleurd__foto.foto__liggend {
     height: 25rem;
     width: 35rem;
   }
-  .main__photoshop__foto.foto__vierkant {
+  .main__photoshop__foto.foto__vierkant,
+.main__ingekleurd__foto.foto__vierkant {
     height: 35rem;
     width: 35rem;
   }
-  .main__photoshop__subTekst {
+  .main__photoshop__subTekst,
+.main__ingekleurd__subTekst {
     width: 30ch;
     height: auto;
   }
@@ -1259,10 +1373,12 @@ body {
     height: 52.5rem;
     width: 52.5rem;
   }
-  .main__photoshop__gallery {
+  .main__photoshop__gallery,
+.main__ingekleurd__gallery {
     width: 70%;
   }
-  .main__photoshop__subTekst {
+  .main__photoshop__subTekst,
+.main__ingekleurd__subTekst {
     width: 70ch;
   }
 }
