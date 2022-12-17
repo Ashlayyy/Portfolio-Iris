@@ -206,6 +206,11 @@
                 width: 35rem;
             }
         }
+
+        &__subTekst {
+            width: auto - 10ch;
+            height: auto;
+        }
     }
 }
 
