@@ -1191,6 +1191,18 @@ body {
     height: 35rem;
     width: 35rem;
   }
+  .main__vormgeving__foto.foto__staand {
+    height: 55rem;
+    width: 35rem;
+  }
+  .main__vormgeving__foto.foto__liggend {
+    height: 25rem;
+    width: 35rem;
+  }
+  .main__vormgeving__foto.foto__vierkant {
+    height: 35rem;
+    width: 35rem;
+  }
   .main__photoshop__foto.foto__staand {
     height: 55rem;
     width: 35rem;

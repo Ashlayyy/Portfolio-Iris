@@ -170,6 +170,25 @@
         }
     }
 
+    .main__vormgeving {
+        &__foto {
+            &.foto__staand {
+                height: 55rem;
+                width: 35rem;
+            }
+    
+            &.foto__liggend {
+                height: 25rem;
+                width: 35rem;
+            }
+
+            &.foto__vierkant {
+                height: 35rem;
+                width: 35rem;
+            }
+        }
+    }
+
     .main__photoshop {
         &__foto {
             &.foto__staand {
