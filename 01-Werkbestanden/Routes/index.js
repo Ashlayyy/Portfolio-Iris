@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router()
 const path = require('path');
 const nodemailer = require('nodemailer');
+const fs = require('fs').promises;
+const functions = require('./functions');
+
+
 
 router.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../Public', 'index.html'));
@@ -53,6 +57,17 @@ router.get('/examen/3d', (req, res, next) => {
 
 router.get('/contact', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../Public/html', 'contact.html'));
+})
+
+
+router.get('/components/navbar', async (req, res, next) => {
+  const data = await functions.readFile(`${path.join(__dirname, '../Public/components/navbar', 'navbar.html')}`);
+  res.send(data);
+})
+
+router.get('/components/footer', async (req, res, next) => {
+  const data = await functions.readFile(`${path.join(__dirname, '../Public/components/footer', 'footer.html')}`);
+  res.send(data);
 })
 
 

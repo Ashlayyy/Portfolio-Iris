@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/css/style.min.css" />
     <script src="/js/index.min.js" defer></script>
     <script src="https://kit.fontawesome.com/43e7afcfc9.js" crossorigin="anonymous"></script>
+
+    <script src="/components/navbar/navbar.js" type="text/javascript" defer></script>
+    <script src="/components/footer/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -21,52 +24,9 @@
                 <h4 class="figure__h4">Mijn fotografie</h4>
             </div>
         </div>
-        <nav class="navigation">
-            <div class="navigation__wrapper">
-                <img class="navigation__img" src="/img/Images - Index/LogoIrisMeijer.jpg" alt="Logo van Iris." />
 
-                <div class="navigation__subWrapper">
-                    <ul class="navigation__list">
-                        <li class="navigation__item item__dier">
-                            <a class="navigation__link" href="/dier"> Dier &darr;</a>
-                            <ul class="submenu__dier">
-                                <li class="submenu__dier__item">
-                                    <a class="submenu__dier__link" href="/artis">Artis</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/natuur"> Natuur </a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="/product"> Product</a>
-                        </li>
-                        <li class="navigation__item item__vormgeving">
-                            <a class="navigation__link" href="/vormgeving"> Vormgeving &darr;</a>
-                            <ul class="submenu__vormgeving">
-                                <li class="submenu__vormgeving__item">
-                                    <a class="submenu__vormgeving__link" href="/photoshop">Photoshop</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navigation__item item__overmij">
-                            <a class="navigation__link" href="/overMij"> Over mij &darr;</a>
-                            <ul class="submenu__overmij">
-                                <li class="submenu__overmij__item">
-                                    <a class="submenu__overmij__link" href="/examen/product">Examen Product</a>
-                                    <br>
-                                    <a class="submenu__overmij__link" href="/examen/3d">Examen 3D</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+        <nav-bar></nav-bar>
 
-                    <div class="navigation__buttonWrapper">
-                        <button class="navigation__button" id="navigation__button">Contact</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
 
     <article class="main__product">
@@ -94,11 +54,7 @@
         <img class="modal-content" id="modal-content">
     </div>
 
-    <footer class="footer">
-        <p class="footer__tekst">
-            Copyright © <span class="footer__copyrightYear" id="footer__copyrightYear"></span> Iris Meijer. Alle rechten voorbehouden. 
-        </p>
-    </footer>
+    <footer-bar></footer-bar>
 </body>
 
 </html>

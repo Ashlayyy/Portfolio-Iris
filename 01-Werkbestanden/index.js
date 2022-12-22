@@ -15,6 +15,7 @@ app.use('/', require('./Routes/index'));
 app.use('/css', express.static('Public/css')); 
 app.use('/js', express.static('Public/js'));
 app.use('/html', express.static('Public/html'));
+app.use('/components', express.static('Public/components'));
  
 app.use('/download', express.static('Public/download'))
 
