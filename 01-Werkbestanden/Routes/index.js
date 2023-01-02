@@ -65,7 +65,7 @@ router.get('/copyright', (req, res, next) => {
 })
 
 router.get('/verslag', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/Old/pagina', 'verslag.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'verslag.html'));
 })
 
 
