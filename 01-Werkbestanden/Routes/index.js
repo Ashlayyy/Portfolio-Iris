@@ -13,59 +13,59 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/dier', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old/Pagina', 'dier.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'dier.html'));
 })
 
 router.get('/natuur', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old/Pagina', 'natuur.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'natuur.html'));
 })
 
 router.get('/product', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/Pagina', 'product.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'product.html'));
 })
 
 router.get('/vormgeving', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/Pagina', 'vormgeving.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'vormgeving.html'));
 })
 
 router.get('/photoshop', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/Pagina', 'photoshop.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/Pagina', 'photoshop.html'));
 })
 
 router.get('/photoshop/ingekleurd', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/extra/photoshop', 'ingekleurd.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/extra/photoshop', 'ingekleurd.html'));
 })
 
 
 router.get('/overmij', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old', 'overmij.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old', 'overmij.html'));
 })
 
 router.get('/artis', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old/extra/dier', 'artis.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old/extra/dier', 'artis.html'));
 })
 
 
 router.get('/examen/product', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old/extra/examens', 'product.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old/extra/examens', 'product.html'));
 })
 
 router.get('/examen/3d', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old/extra/examens', '3D.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old/extra/examens', '3D.html'));
 })
 
 
 router.get('/contact', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../Public/html/old', 'contact.html'));
+    res.sendFile(path.join(__dirname, '../Public/html/Old', 'contact.html'));
 })
 
 
 router.get('/copyright', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/extra/copyright', 'copyright.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/extra/copyright', 'copyright.html'));
 })
 
 router.get('/verslag', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../Public/html/old/extra/copyright', 'copyright.html'));
+  res.sendFile(path.join(__dirname, '../Public/html/Old/extra/copyright', 'copyright.html'));
 })
 
 
