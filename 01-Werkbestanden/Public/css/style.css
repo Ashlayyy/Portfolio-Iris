@@ -195,37 +195,221 @@ body {
   background-color: #bc3315;
 }
 
-.submenu__dier, .submenu__overmij, .submenu__vormgeving {
+.navigation_new {
+  width: 100%;
+  height: 10%;
+  background: #000;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.navigation_new__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+.navigation_new__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.navigation_new__subWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.navigation_new__buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+.navigation_new__img {
+  height: 7rem;
+  width: 7rem;
+}
+.navigation_new__img:hover {
+  cursor: pointer;
+}
+.navigation_new__list {
+  margin-left: 15rem;
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  width: auto;
+}
+.navigation_new__link {
+  color: #eee;
+  text-decoration: none;
+  font-size: 120%;
+  transition: 0.3s all;
+  text-transform: uppercase;
+}
+.navigation_new__link:hover {
+  color: #e66842;
+}
+.navigation_new__link__plusMin::after {
+  content: "+";
+}
+.navigation_new__link__plusMin:hover::after {
+  content: "-";
+}
+.navigation_new__button {
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  font-size: 100%;
+  background: #e66842;
+  background-color: #e66842;
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
+  border-radius: 5px;
+  border: 1px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #854629;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  font-family: "Bookman Old Style", sans-serif;
+}
+.navigation_new__button:hover {
+  background-color: #bc3315;
+}
+.navigation_new__bars {
+  display: none;
+}
+
+button.navigation_new__link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: arial, sans-serif;
+  cursor: pointer;
+}
+
+.item__plusMin .navigation_new__link__plusMin::after {
+  content: "+";
+}
+.item__plusMin:hover .navigation_new__link__plusMin::after {
+  content: "-";
+}
+
+.submenu__portfolio {
   list-style: none;
   display: none;
   position: absolute;
-  overflow: auto;
+  overflow: visible;
   width: auto;
   background: #000;
 }
-.submenu__dier__item, .submenu__overmij__item, .submenu__vormgeving__item {
+.submenu__portfolio__item {
   float: none;
   overflow: hidden;
   padding: 1.5rem;
   font-size: 100%;
 }
-.submenu__dier__link, .submenu__overmij__link, .submenu__vormgeving__link {
+.submenu__portfolio__link {
   color: #eee;
   text-decoration: none;
   padding: 1rem;
   padding-left: 0;
 }
-.submenu__dier__link:hover, .submenu__overmij__link:hover, .submenu__vormgeving__link:hover {
+.submenu__portfolio__link:hover {
+  color: #e66842;
+}
+.submenu__overmij {
+  list-style: none;
+  display: none;
+  position: absolute;
+  overflow: visible;
+  width: auto;
+  background: #000;
+}
+.submenu__overmij__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__overmij__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__overmij__link:hover {
+  color: #e66842;
+}
+.submenu__artis {
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: auto;
+  background: #000;
+  left: 160px;
+  top: 0px;
+}
+.submenu__artis__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__artis__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__artis__link:hover {
+  color: #e66842;
+}
+.submenu__photoshop {
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: auto;
+  background: #000;
+  left: 160px;
+  top: 155px;
+}
+.submenu__photoshop__item {
+  float: none;
+  overflow: hidden;
+  padding: 1.5rem;
+  font-size: 100%;
+}
+.submenu__photoshop__link {
+  color: #eee;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 0;
+}
+.submenu__photoshop__link:hover {
   color: #e66842;
 }
 
-.item__dier:hover .submenu__dier {
+.item__portfolio:hover .submenu__portfolio {
+  display: block;
+}
+.item__artis:hover .submenu__artis {
+  display: block;
+}
+.item__photoshop:hover .submenu__photoshop {
   display: block;
 }
 .item__overmij:hover .submenu__overmij {
-  display: block;
-}
-.item__vormgeving:hover .submenu__vormgeving {
   display: block;
 }
 
@@ -1175,6 +1359,11 @@ body {
   opacity: 0.7;
 }
 
+/*
+
+    Smaller screens
+
+*/
 @media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
   .figure {
     height: 55vh;
@@ -1231,6 +1420,9 @@ body {
     width: 100%;
     padding-left: 2rem;
   }
+  .navigation_new__list {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
   .main__contact {
@@ -1245,6 +1437,62 @@ body {
   }
   .main__contact__tekstInput {
     width: 42.5rem;
+  }
+  .navigation_new__bars {
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 250%;
+    text-decoration: none;
+    color: #eee;
+    transition: 0.2s all;
+  }
+  .navigation_new__bars:hover {
+    color: rgb(105, 105, 105);
+  }
+  .navigation_new__wrap {
+    flex-direction: column;
+    display: none;
+  }
+  .navigation_new__list {
+    animation: 0.2s all ease;
+    opacity: 0;
+  }
+  .navigation_new__buttonWrapper {
+    animation: 0.2s all ease;
+    opacity: 0;
+  }
+  .navigation_new__wrap.responsive {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    animation: 0.2s all ease;
+    opacity: 1;
+  }
+  .navigation_new__list.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    gap: 2rem;
+    animation: 0.2s all ease;
+    opacity: 1;
+  }
+  .navigation_new__wrapper.responsive {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    animation: 0.2s all ease;
+    opacity: 1;
+  }
+  .navigation_new__buttonWrapper.responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2.5rem;
+    animation: 0.2s all ease;
+    opacity: 1;
   }
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
@@ -1342,6 +1590,11 @@ body {
     font-size: 100%;
   }
 }
+/*
+
+    Bigger screens
+
+*/
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
   .figure {
     height: 65rem;

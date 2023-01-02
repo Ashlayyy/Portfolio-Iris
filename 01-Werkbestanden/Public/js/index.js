@@ -1,43 +1,31 @@
-//copyrigth year
-const footer__copyRightYear = document.getElementById("footer__copyrightYear");
-const year = new Date().getFullYear();
-footer__copyRightYear.innerText = year;
-
 //btt button
 const scrollToTopBtn = document.getElementById("button__scrollToTop");
-const rootElement = document.documentElement;
-
-function handleScroll() {
-  const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-  if (
-    rootElement.scrollTop / scrollTotal > 0.1 &&
-    rootElement.scrollTop / scrollTotal <= 0.9
-  ) {
-    scrollToTopBtn.classList.add("showBtn");
-    scrollToTopBtn.classList.remove("whiteBtn");
-  } else if (rootElement.scrollTop / scrollTotal > 0.9) {
-    scrollToTopBtn.classList.add("whiteBtn");
-  } else {
-    scrollToTopBtn.classList.remove("showBtn");
-    scrollToTopBtn.classList.remove("whiteBtn");
+if (scrollToTopBtn) {
+  function handleScroll() {
+    const rootElement = document.documentElement;
+    const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+    if (
+      rootElement.scrollTop / scrollTotal > 0.1 &&
+      rootElement.scrollTop / scrollTotal <= 0.9
+    ) {
+      scrollToTopBtn.classList.add("showBtn");
+      scrollToTopBtn.classList.remove("whiteBtn");
+    } else if (rootElement.scrollTop / scrollTotal > 0.9) {
+      scrollToTopBtn.classList.add("whiteBtn");
+    } else {
+      scrollToTopBtn.classList.remove("showBtn");
+      scrollToTopBtn.classList.remove("whiteBtn");
+    }
   }
-}
 
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
-document.addEventListener("scroll", handleScroll);
-
-//contact button
-const button_contact = document.getElementById("navigation__button");
-if (button_contact) {
-  button_contact.addEventListener("click", function (event) {
-    window.location.href = "/contact";
-  });
+  function scrollToTop() {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+  scrollToTopBtn.addEventListener("click", scrollToTop);
+  document.addEventListener("scroll", handleScroll);
 }
 
 //artis button
@@ -120,7 +108,7 @@ const modalImg = document.getElementById("modal-content");
 
 const span = document.getElementsByClassName("close")[0];
 
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 
 if (modal) {
   modal.addEventListener("click", () => {
@@ -132,18 +120,18 @@ if (modal) {
 if (img) {
   img.forEach((img) => {
     img.addEventListener("click", (event) => {
-      if (img.classList.contains('foto__staand')) {
-        modalImg.classList.add('foto__staand')
-      } else if (img.classList.contains('foto__vierkant')) {
-        modalImg.classList.add('foto__vierkant')
+      if (img.classList.contains("foto__staand")) {
+        modalImg.classList.add("foto__staand");
+      } else if (img.classList.contains("foto__vierkant")) {
+        modalImg.classList.add("foto__vierkant");
       } else {
-        modalImg.classList.add('foto__liggend');
-        if (modalImg.classList.contains('foto__staand')) {
-          modalImg.classList.remove('foto__staand');
-        } else if (modalImg.classList.contains('foto__vierkant')) {
-          modalImg.classList.remove('foto__vierkant');
+        modalImg.classList.add("foto__liggend");
+        if (modalImg.classList.contains("foto__staand")) {
+          modalImg.classList.remove("foto__staand");
+        } else if (modalImg.classList.contains("foto__vierkant")) {
+          modalImg.classList.remove("foto__vierkant");
         } else {
-          modalImg.classList.remove('foto__liggend');
+          modalImg.classList.remove("foto__liggend");
         }
       }
       body.style.overflow = "hidden";
@@ -158,21 +146,4 @@ if (span) {
     body.style.overflow = "auto";
     modal.style.display = "none";
   };
-}
-
-
-//logo button
-const logo = document.getElementsByClassName('navigation__img')[0];
-
-logo.addEventListener('click', (e) => {
-  location.replace('/');
-})
-
-
-//artis button
-const button_zwartWit = document.getElementById("psZwartWit__button");
-if (button_zwartWit) {
-  button_zwartWit.addEventListener("click", function (event) {
-    window.location.href = "/photoshop/ingekleurd";
-  });
 }

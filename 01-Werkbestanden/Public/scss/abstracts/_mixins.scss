@@ -53,9 +53,66 @@
     list-style: none;
     display: none;
     position: absolute;
-    overflow: auto;
+    overflow: visible;
     width: auto;
     background: map-get(variables.$fontColors, "blackColor");
+
+    &__item {
+        float: none;
+        overflow: hidden;
+        padding: 1.5rem;
+        font-size: 100%;
+    }
+
+    &__link {
+        color: map-get(variables.$fontColors, "whiteColor");
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 0;
+
+        &:hover {
+            color: map-get(variables.$fontColors, "orangeHoverColor");
+        }
+    }
+}
+
+
+@mixin standardCssSubDropdown {
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: auto;
+    background: map-get(variables.$fontColors, "blackColor");
+    left: 160px;
+    top: 0px;
+
+    &__item {
+        float: none;
+        overflow: hidden;
+        padding: 1.5rem;
+        font-size: 100%;
+    }
+
+    &__link {
+        color: map-get(variables.$fontColors, "whiteColor");
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 0;
+
+        &:hover {
+            color: map-get(variables.$fontColors, "orangeHoverColor");
+        }
+    }
+}
+
+@mixin standardCssPsDropdown {
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: auto;
+    background: map-get(variables.$fontColors, "blackColor");
+    left: 160px;
+    top: 155px;
 
     &__item {
         float: none;

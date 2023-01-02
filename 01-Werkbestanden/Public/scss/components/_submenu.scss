@@ -2,23 +2,37 @@
 @use "../abstracts/mixins";
 
 .submenu {
-    &__dier,
-    &__overmij,
-    &__vormgeving {
-        @include mixins.standardCssDropdown;
-    }
+  &__portfolio {
+    @include mixins.standardCssDropdown;
+  }
+
+  &__overmij {
+    @include mixins.standardCssDropdown;
+  }
+  
+  &__artis {
+    @include mixins.standardCssSubDropdown;
+  }
+
+  &__photoshop {
+    @include mixins.standardCssPsDropdown;
+  }
 }
 
 .item {
-    &__dier:hover .submenu__dier{
-        display: block;
-    }
+  &__portfolio:hover .submenu__portfolio {
+    display: block;
+  }
+  
+  &__artis:hover .submenu__artis {
+    display: block;
+  }
 
-    &__overmij:hover .submenu__overmij{
-        display: block;
-    }
+  &__photoshop:hover .submenu__photoshop {
+    display: block;
+  }
 
-    &__vormgeving:hover .submenu__vormgeving{
-        display: block;
-    }
+  &__overmij:hover .submenu__overmij {
+    display: block;
+  }
 }

@@ -1,3 +1,11 @@
+@use "../abstracts/variables";
+
+/*
+
+    Smaller screens
+
+*/
+
 @media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
     .figure {
         height: 55vh
@@ -65,6 +73,12 @@
             padding-left: 2rem;
         }
     }
+
+    .navigation_new {
+        &__list {
+            margin-left: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px), screen and (max-device-width: 1000px) {
@@ -83,6 +97,75 @@
         &__tekstInput {
             width: 42.5rem;
         }
+    }
+
+    .navigation_new {
+        &__bars {
+            display: block;
+            width: auto;
+            height: auto;
+            font-size: 250%;
+            text-decoration: none;
+            color: map-get(variables.$fontColors, "whiteColor");
+            transition: 0.2s all;
+
+            &:hover {
+                color: map-get(variables.$fontColors, "grayColor");
+            }
+        }
+
+        &__wrap {
+            flex-direction: column;
+            display: none;
+        }
+
+        &__list {
+            animation: 0.2s all ease;
+            opacity: 0;
+        }
+
+        &__buttonWrapper {
+            animation: 0.2s all ease;
+            opacity: 0;
+        }
+
+
+        //Responsive
+        &__wrap.responsive {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            animation: 0.2s all ease;
+            opacity: 1;
+        }
+
+        &__list.responsive {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            gap: 2rem;
+            animation: 0.2s all ease;
+            opacity: 1;
+        }
+
+        &__wrapper.responsive {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            animation: 0.2s all ease;
+            opacity: 1;
+        }
+        
+        &__buttonWrapper.responsive {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 2.5rem;
+            animation: 0.2s all ease;
+            opacity: 1;
+        }   
     }
 }   
 
@@ -226,6 +309,14 @@
         }
     }
 }
+
+
+
+/*
+
+    Bigger screens
+
+*/
 
 @media screen and (min-width: 1600px), screen and (min-device-width: 1600px) {
     .figure {

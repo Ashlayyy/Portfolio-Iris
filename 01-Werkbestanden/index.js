@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.raw());
 
 app.use('/', require('./Routes/index'));
+app.use('/v2/', require('./Routes/index.new'));
 
 app.use('/css', express.static('Public/css')); 
 app.use('/js', express.static('Public/js'));
