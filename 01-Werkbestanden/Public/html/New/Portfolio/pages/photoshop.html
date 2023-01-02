@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Iris Meijer - Photoshop</title>
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <script src="/js/index.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/43e7afcfc9.js" crossorigin="anonymous"></script>
+
+
+    <script type="module" src="/components/index.js" defer></script>
+    <script src="/js/index.min.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="figure__withoutBackground">
+            <div class="figure__tekstWrapper">
+                <h2 class="figure__h2">
+                    <a class="figure__link" href="/"> Iris Meijer </a>
+                </h2>
+                <h4 class="figure__h4">Mijn fotografie</h4>
+            </div>
+        </div>
+
+        <nav-bar></nav-bar>
+
+    </header>
+
+    <article class="main__photoshop">
+        <h2 class="main__photoshop__title">Photoshop</h2>
+        <div class="main__photoshop__galleryWrapper">
+            <div class="main__photoshop__tekstWrapper">
+                <p class="main__photoshop__subTekst">
+                    Deze foto’s zijn in het origineel zwart-wit. In Adobe Photoshop heb ik de
+                    foto’s ingekleurd en ik vind persoonlijk dat dit erg goed is gelukt!
+                </p>
+            </div>
+            <div class="main__photoshop__gallery">
+                <div class="main__photoshop__galeryWrapper">
+                    <img src="/img/Images - Portfolio/Images - Vormgeving/Images - Photoshop/Images - Inkleuren/Images - Zwart-Wit/Boat1_Zwart-Wit.jpg"
+                        alt="" class="main__photoshop__foto foto__clickable foto__staand" />
+                    <img src="/img/Images - Portfolio/Images - Vormgeving/Images - Photoshop/Images - Inkleuren/Images - Colour/Boat.jpg"
+                        alt="" class="main__photoshop__foto foto__clickable foto__staand" />
+                </div>
+            </div>
+            <div class="main__photoshop__buttonWrapper">
+                <button class="main__photoshop__button" id="psZwartWit__button">
+                    Benieuwd naar meer werk zoals dit?
+                </button>
+            </div>
+        </div>
+
+        <hr class="main__photoshop__dotted">
+
+        <div class="main__photoshop__galleryWrapper">
+            <div class="main__photoshop__tekstWrapper">
+                <p class="main__photoshop__subTekst">
+                    Voor een schoolopdracht heb ik een filmposter(links) & een parfumposter(rects) gemaakt in Adobe Photoshop.
+                </p>
+            </div>
+            <div class="main__photoshop__gallery">
+                <div class="main__photoshop__galeryWrapper">
+                    <img src="/img/Images - Portfolio/Images - Vormgeving/Images - Photoshop/Images - Posters/FilmposterMartinGarrix.jpg" alt="" class="main__photoshop__foto foto__clickable foto__staand" />
+                </div>
+                <div class="main__photoshop__galeryWrapper">
+                    <img src="/img/Images - Portfolio/Images - Vormgeving/Images - Photoshop/Images - Posters/ParfumposterAkro.jpg" alt="" class="main__photoshop__foto foto__clickable foto__vierkant" />
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <span class="button__scrollToTop" id="button__scrollToTop">
+        <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </span>
+
+    <div id="modalImage" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-content" />
+    </div>
+
+    <footer-bar></footer-bar>
+</body>
+
+</html>

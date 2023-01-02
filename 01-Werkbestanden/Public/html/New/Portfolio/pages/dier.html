@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Iris Meijer - Dier</title> 
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <script src="/js/index.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/43e7afcfc9.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="/components/index.js" defer></script>
+    <script src="/js/index.min.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="figure__withoutBackground">
+            <div class="figure__tekstWrapper">
+                <h2 class="figure__h2">
+                    <a class="figure__link" href="/"> Iris Meijer </a>
+                </h2>
+                <h4 class="figure__h4">Mijn fotografie</h4>
+            </div>
+        </div>
+
+        <nav-bar></nav-bar>
+
+    </header>
+
+    <article class="main__dier">
+        <h2 class="main__dier__title">
+            Dier
+        </h2>
+        <div class="main__dier__gallery">
+            <div class="main__dier__galeryWrapper">
+                <img src="/img/Images - Portfolio/Images - Dier/Liggend/HondInNatuur.jpg" alt="" class="main__dier__foto foto__clickable foto__liggend" />
+                <img src="/img/Images - Portfolio/Images - Dier/Liggend/HondTakje.jpg" alt="" class="main__dier__foto foto__clickable foto__liggend" />
+                <img src="/img/Images - Portfolio/Images - Dier/Liggend/HondNatuur.jpg" alt="" class="main__dier__foto foto__clickable foto__liggend" />    
+            </div>
+            <div class="main__dier__galeryWrapper">
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/Buizerd.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/Kitten.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/HondSneeuw.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+            </div>
+            <div class="main__dier__galeryWrapper">
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/Konijn.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/KatSchaduw.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+                <img src="/img/Images - Portfolio/Images - Dier/Staand/HondBlij.jpg" alt="" class="main__dier__foto foto__clickable foto__staand" />
+            </div>
+        </div>
+        <div class="main__dier__artisButton">
+            <button class="main__dier__button" id="artis__button">
+                Benieuwd naar foto's van de dieren in Artis?
+            </button>
+        </div>
+    </article>
+
+    <span class="button__scrollToTop" id="button__scrollToTop">
+        <i class="fa-solid fa-circle-arrow-up fa-3x"></i>
+    </span>
+
+    <div id="modalImage" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-content">
+    </div>
+
+    <footer-bar></footer-bar>
+</body>
+
+</html>
