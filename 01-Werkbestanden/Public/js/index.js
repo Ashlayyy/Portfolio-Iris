@@ -36,6 +36,14 @@ if (button_artis) {
   });
 }
 
+//zwartwit button
+const button_psZwartWit = document.getElementById("psZwartWit__button");
+if (button_psZwartWit) {
+  button_psZwartWit.addEventListener("click", function (event) {
+    window.location.href = "/photoshop/ingekleurd";
+  });
+}
+
 //examen 1 button
 const examen1_button = document.getElementById(
   "main__overmij__examenButton_product"
@@ -101,14 +109,22 @@ if (formSubmit) {
 }
 
 //modal image
-const modal = document.getElementById("modalImage");
-
-const img = document.querySelectorAll(".foto__clickable");
-const modalImg = document.getElementById("modal-content");
-
-const span = document.getElementsByClassName("close")[0];
-
-const body = document.querySelector("body");
+let modal, img, modalImg, span, body;
+if (!modal) {
+  modal = document.getElementById("modalImage");
+}
+if (!img) {
+  img = document.querySelectorAll(".foto__clickable");
+}
+if (!modalImg) {
+  modalImg = document.getElementById("modal-content");
+}
+if (!span) {
+  span = document.getElementsByClassName("close")[0];
+}
+if (!body) {
+  body = document.querySelector("body");
+}
 
 if (modal) {
   modal.addEventListener("click", () => {
