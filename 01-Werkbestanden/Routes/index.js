@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router()
 const path = require('path');
 const nodemailer = require('nodemailer');
-const fs = require('fs').promises;
 const functions = require('./functions');
 
 
