@@ -173,7 +173,7 @@ router.post('/sendEmail', (req, res, next) => {
 */
 router.get("/copyright", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Copyright", "copyright.html")
+    path.join(__dirname, "../Public/html/New/Copyright", "copyright.html")
   );
 });
 /*
@@ -181,7 +181,7 @@ router.get("/copyright", (req, res, next) => {
 */
 router.get("/verslag", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Stage", "verslag.html")
+    path.join(__dirname, "../Public/html/New/Stage", "verslag.html")
   );
 });
 
