@@ -16,7 +16,7 @@ router.get("/", (req, res, next) => {
 */
 router.get("/portfolio", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio", "portfolio.html")
+    path.join(__dirname, "../Public/html/New/Portfolio", "portfolio.html")
   );
 });
 /*
@@ -24,7 +24,7 @@ router.get("/portfolio", (req, res, next) => {
 */
 router.get("/dier", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio/pages", "dier.html")
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "dier.html")
   );
 });
 /*
@@ -32,7 +32,7 @@ router.get("/dier", (req, res, next) => {
 */
 router.get("/artis", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio/pages", "artis.html")
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "artis.html")
   );
 });
 /*
@@ -40,7 +40,7 @@ router.get("/artis", (req, res, next) => {
 */
 router.get("/natuur", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio/pages", "natuur.html")
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "natuur.html")
   );
 });
 /*
@@ -48,7 +48,7 @@ router.get("/natuur", (req, res, next) => {
 */
 router.get("/product", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio/pages", "product.html")
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "product.html")
   );
 });
 /*
@@ -58,7 +58,7 @@ router.get("/vormgeving", (req, res, next) => {
   res.sendFile(
     path.join(
       __dirname,
-      "../Public/html/new/Portfolio/pages",
+      "../Public/html/New/Portfolio/pages",
       "vormgeving.html"
     )
   );
@@ -68,7 +68,7 @@ router.get("/vormgeving", (req, res, next) => {
 */
 router.get("/photoshop", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Portfolio/pages", "photoshop.html")
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "photoshop.html")
   );
 });
 /*
@@ -78,7 +78,7 @@ router.get("/photoshop/ingekleurd", (req, res, next) => {
   res.sendFile(
     path.join(
       __dirname,
-      "../Public/html/new/Portfolio/pages",
+      "../Public/html/New/Portfolio/pages",
       "photoshop-ingekleurd.html"
     )
   );
@@ -89,7 +89,7 @@ router.get("/photoshop/ingekleurd", (req, res, next) => {
 */
 router.get("/overmij", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Overmij", "overmij.html")
+    path.join(__dirname, "../Public/html/New/Overmij", "overmij.html")
   );
 });
 /*
@@ -97,7 +97,7 @@ router.get("/overmij", (req, res, next) => {
 */
 router.get("/examen/product", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Overmij", "examen_product.html")
+    path.join(__dirname, "../Public/html/New/Overmij", "examen_product.html")
   );
 });
 /*
@@ -105,7 +105,7 @@ router.get("/examen/product", (req, res, next) => {
 */
 router.get("/examen/graphics", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Overmij", "examen_graphics.html")
+    path.join(__dirname, "../Public/html/New/Overmij", "examen_graphics.html")
   );
 });
 
@@ -114,7 +114,7 @@ router.get("/examen/graphics", (req, res, next) => {
 */
 router.get("/contact", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/new/Contact", "contact.html")
+    path.join(__dirname, "../Public/html/New/Contact", "contact.html")
   );
 });
 /*
