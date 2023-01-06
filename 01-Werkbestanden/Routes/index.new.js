@@ -173,7 +173,15 @@ router.post('/sendEmail', (req, res, next) => {
 */
 router.get("/copyright", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Copyright", "copyright.html")
+    path.join(__dirname, "../Public/html/New/Footer/Copyright", "copyright.html")
+  );
+});
+/*
+    Sitemap
+*/
+router.get("/sitemap", (req, res, next) => {
+  res.sendFile(
+    path.join(__dirname, "../Public/html/New/Footer/Sitemap", "sitemap.html")
   );
 });
 /*

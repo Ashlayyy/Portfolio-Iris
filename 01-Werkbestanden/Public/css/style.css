@@ -1642,14 +1642,19 @@ button.navigation_new__link {
   }
   .main__vormgeving__gallery {
     width: 70%;
+    margin: auto 0;
   }
   .main__vormgeving__foto.foto__staand {
-    height: 82.5rem;
-    width: 52.5rem;
+    height: 65rem;
+    width: 45rem;
   }
   .main__vormgeving__foto.foto__vierkant {
     height: 52.5rem;
     width: 52.5rem;
+  }
+  .main__vormgeving__foto.foto__liggend {
+    height: 30rem;
+    width: 45rem;
   }
   .main__photoshop__gallery,
 .main__ingekleurd__gallery {

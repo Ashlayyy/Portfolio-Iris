@@ -354,17 +354,23 @@
     .main__vormgeving {
         &__gallery {
             width: 70%;
+            margin: auto 0;
         }
 
         &__foto {
             &.foto__staand { 
-                height: 82.5rem;
-                width: 52.5rem;
+                height: 65rem;
+                width: 45rem;
             }
 
             &.foto__vierkant {
                 height: 52.5rem;
                 width: 52.5rem;
+            }
+
+            &.foto__liggend {
+                height: 30rem;
+                width: 45rem;
             }
         }
     }
