@@ -56,11 +56,7 @@ router.get("/product", (req, res, next) => {
 */
 router.get("/vormgeving", (req, res, next) => {
   res.sendFile(
-    path.join(
-      __dirname,
-      "../Public/html/New/Portfolio/pages",
-      "vormgeving.html"
-    )
+    path.join(__dirname, "../Public/html/New/Portfolio/pages", "vormgeving.html")
   );
 });
 /*
