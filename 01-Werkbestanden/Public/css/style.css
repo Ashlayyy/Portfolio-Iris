@@ -996,8 +996,10 @@ button.navigation_new__link {
   transition: 0.3s all;
 }
 .main__index__foto__staand {
-  height: 110rem;
-  width: 70rem;
+  height: 82.5rem;
+  width: 52.5rem;
+  border-radius: 1rem;
+  transition: 0.3s all;
 }
 
 .main__natuur {
