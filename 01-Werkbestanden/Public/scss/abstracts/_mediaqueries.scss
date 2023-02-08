@@ -11,6 +11,16 @@
         height: 55vh
     }
 
+    .main__examen3D {
+        &__divider {
+            flex-direction: column;
+        }
+
+        &__wrap {
+            flex-direction: column;
+        }
+    }
+
     .main__overmij {
         height: 200vh;
         width: 100%;
@@ -206,6 +216,23 @@
             &.foto__liggend__detail {
                 height: 10em;
                 width: 34rem; 
+            }
+        }
+    }
+
+    .main__examen3D {
+        &__paragraph {
+            width: 50ch;
+        }
+
+        &__photo {
+            &Staand {
+                height: 45rem;
+                width: 30rem;
+            }
+            &Liggend {
+                height: 25rem;
+                width: 35rem;
             }
         }
     }
