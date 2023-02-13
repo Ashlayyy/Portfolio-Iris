@@ -193,30 +193,19 @@ router.get("/verslag", (req, res, next) => {
     Navbar component
 */
 router.get("/components/navbar/:id", async (req, res, next) => {
-  if (req.params.id == "new") {
-    let html;
-    html = await functions.readFile(
-      `${path.join(__dirname, `../Public/components/navbar/navbar-new.html`)}`
-    );
-    res.send(html);
-  } else {
-    let html;
-    html = await functions.readFile(
-      `${path.join(__dirname, `../Public/components/navbar/navbar-old.html`)}`
-    );
-    res.send(html);
-  }
+  if (req.params.id != 'new' && req.params.id != 'old') return res.send('This version does not exist!');
+  res.send(await functions.readFile(
+    `${path.join(__dirname, `../Public/components/navbar/navbar-${req.params.id}.html`)}`
+  ));
 });
 
 /*
     Footer component
 */
 router.get("/components/footer", async (req, res, next) => {
-  let html;
-  html = await functions.readFile(
+  res.send(await functions.readFile(
     `${path.join(__dirname, `../Public/components/footer/footer.html`)}`
-  );
-  res.send(html);
+  ));
 });
 
 module.exports = router;

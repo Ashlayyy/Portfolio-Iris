@@ -1,8 +1,8 @@
 //btt button
 const scrollToTopBtn = document.getElementById("button__scrollToTop");
+const rootElement = document.documentElement;
 if (scrollToTopBtn) {
   function handleScroll() {
-    const rootElement = document.documentElement;
     const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
     if (
       rootElement.scrollTop / scrollTotal > 0.1 &&

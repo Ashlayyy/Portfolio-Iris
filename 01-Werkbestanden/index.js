@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
 
-app.use('/v1/', require('./Routes/index'));
 app.use('/', require('./Routes/index.new'));
 
 app.use('/css', express.static('Public/css')); 
