@@ -16,7 +16,7 @@ router.get("/", (req, res, next) => {
 */
 router.get("/portfolio", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio", "portfolio.html")
+    path.join(__dirname, "../Public/html/Portfolio", "portfolio.html")
   );
 });
 /*
@@ -24,7 +24,7 @@ router.get("/portfolio", (req, res, next) => {
 */
 router.get("/dier", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "dier.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "dier.html")
   );
 });
 /*
@@ -32,7 +32,7 @@ router.get("/dier", (req, res, next) => {
 */
 router.get("/artis", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "artis.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "artis.html")
   );
 });
 /*
@@ -40,7 +40,7 @@ router.get("/artis", (req, res, next) => {
 */
 router.get("/natuur", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "natuur.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "natuur.html")
   );
 });
 /*
@@ -48,7 +48,15 @@ router.get("/natuur", (req, res, next) => {
 */
 router.get("/product", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "product.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "product.html")
+  );
+});
+/*
+    Portret
+*/
+router.get("/portret", (req, res, next) => {
+  res.sendFile(
+    path.join(__dirname, "../Public/html/Portfolio/pages", "portret.html")
   );
 });
 /*
@@ -56,7 +64,7 @@ router.get("/product", (req, res, next) => {
 */
 router.get("/vormgeving", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "vormgeving.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "vormgeving.html")
   );
 });
 /*
@@ -64,7 +72,7 @@ router.get("/vormgeving", (req, res, next) => {
 */
 router.get("/photoshop", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Portfolio/pages", "photoshop.html")
+    path.join(__dirname, "../Public/html/Portfolio/pages", "photoshop.html")
   );
 });
 /*
@@ -74,7 +82,7 @@ router.get("/photoshop/ingekleurd", (req, res, next) => {
   res.sendFile(
     path.join(
       __dirname,
-      "../Public/html/New/Portfolio/pages",
+      "../Public/html/Portfolio/pages",
       "photoshop-ingekleurd.html"
     )
   );
@@ -85,7 +93,7 @@ router.get("/photoshop/ingekleurd", (req, res, next) => {
 */
 router.get("/overmij", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Overmij", "overmij.html")
+    path.join(__dirname, "../Public/html/Overmij", "overmij.html")
   );
 });
 /*
@@ -93,7 +101,7 @@ router.get("/overmij", (req, res, next) => {
 */
 router.get("/examen/product", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Overmij", "examen_product.html")
+    path.join(__dirname, "../Public/html/Overmij", "examen_product.html")
   );
 });
 /*
@@ -101,7 +109,7 @@ router.get("/examen/product", (req, res, next) => {
 */
 router.get("/examen/graphics", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Overmij", "examen_graphics.html")
+    path.join(__dirname, "../Public/html/Overmij", "examen_graphics.html")
   );
 });
 
@@ -110,28 +118,28 @@ router.get("/examen/graphics", (req, res, next) => {
 */
 router.get("/contact", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Contact", "contact.html")
+    path.join(__dirname, "../Public/html/Contact", "contact.html")
   );
 });
 /*
     Contact formulier versturen
 */
 router.post('/sendEmail', (req, res, next) => {
-    console.log(req.body)
-    res.send('info ontvangen')
-      var transporter = nodemailer.createTransport({
-          service: 'gmail',
-          auth: {
-            user: 'irismeijerportfolio@gmail.com',
-            pass: 'wybfihryeolgyled'
-          }
-        });
-        
-        var mailOptions = {
-          from: 'Iris Meijer',
-          to: 'zandwerven2015@gmail.com',
-          subject: 'Contact formulier portfolio',
-          text: `
+  console.log(req.body)
+  res.send('info ontvangen')
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'irismeijerportfolio@gmail.com',
+      pass: 'wybfihryeolgyled'
+    }
+  });
+
+  var mailOptions = {
+    from: 'Iris Meijer',
+    to: 'zandwerven2015@gmail.com',
+    subject: 'Contact formulier portfolio',
+    text: `
             Hallo iris,
   
             Je hebt een nieuw bericht van je portfolio website.
@@ -153,23 +161,23 @@ router.post('/sendEmail', (req, res, next) => {
           
             Als je wilt reageren kun je de gegevens van bovenstaand bericht gebruiken. 
           `
-        };
-        
-        transporter.sendMail(mailOptions, function(error, info){
-          if (error) {
-            console.log(error);
-          } else {
-            console.log('Email sent: ' + info.response);
-          }
-        });
-  })
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+})
 
 /*
     Copyright
 */
 router.get("/copyright", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Footer/Copyright", "copyright.html")
+    path.join(__dirname, "../Public/html/Footer/Copyright", "copyright.html")
   );
 });
 /*
@@ -177,7 +185,7 @@ router.get("/copyright", (req, res, next) => {
 */
 router.get("/sitemap", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Footer/Sitemap", "sitemap.html")
+    path.join(__dirname, "../Public/html/Footer/Sitemap", "sitemap.html")
   );
 });
 /*
@@ -185,7 +193,7 @@ router.get("/sitemap", (req, res, next) => {
 */
 router.get("/verslag", (req, res, next) => {
   res.sendFile(
-    path.join(__dirname, "../Public/html/New/Stage", "verslag.html")
+    path.join(__dirname, "../Public/html/Stage", "verslag.html")
   );
 });
 
