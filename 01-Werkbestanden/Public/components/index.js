@@ -1,20 +1,19 @@
+class fetching {
+    fetching = async (url) => {
+      return (await fetch(url)).text();
+    }
+} 
+
 //navbar
 class Navbar extends HTMLElement {
   constructor() {
     super();
   }
 
-  connectedCallback() {
+  async connectedCallback() {
     const shadow = this.attachShadow({mode: 'open'});
-
-    fetch("/components/navbar/new")
-    .then((response) => {
-      return response.text();
-    })
-    .then((data) => {
-      shadow.innerHTML = data;
-    });
-
+    const html = await new fetching().fetching('/components/navbar/new');
+    shadow.innerHTML = html;
     this.addEventListener('click', this.handleClick, true)
   }
 
@@ -62,16 +61,10 @@ class Footer extends HTMLElement {
     super();
   }
 
-  connectedCallback() {
+  async connectedCallback() {
     const shadow = this.attachShadow({mode: 'open'});
-
-    fetch("/components/footer")
-    .then((response) => {
-      return response.text();
-    })
-    .then((data) => {
-      shadow.innerHTML = data;
-    });
+    const html = await new fetching().fetching('/components/footer');
+    shadow.innerHTML = html;
   }
 }
 
