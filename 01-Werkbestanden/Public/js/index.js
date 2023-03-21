@@ -130,6 +130,7 @@ if (modal) {
   modal.addEventListener("click", () => {
     body.style.overflow = "auto";
     modal.style.display = "none";
+    modalImg.classList = 'modal-content';
   });
 }
 
@@ -142,13 +143,17 @@ if (img) {
         modalImg.classList.add("foto__vierkant");
       } else {
         modalImg.classList.add("foto__liggend");
+        /*
         if (modalImg.classList.contains("foto__staand")) {
           modalImg.classList.remove("foto__staand");
         } else if (modalImg.classList.contains("foto__vierkant")) {
           modalImg.classList.remove("foto__vierkant");
-        } else {
+        } else if (modalImg.classList.contains('foto__liggend')){
           modalImg.classList.remove("foto__liggend");
+        } else {
+          modalImg.classList.add("foto__liggend");
         }
+        */
       }
       body.style.overflow = "hidden";
       modal.style.display = "block";
@@ -161,5 +166,6 @@ if (span) {
   span.onclick = function () {
     body.style.overflow = "auto";
     modal.style.display = "none";
+    modalImg.classList = 'modal-content';
   };
 }

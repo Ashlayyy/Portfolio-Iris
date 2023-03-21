@@ -23,13 +23,18 @@
   }
 
   .modal-content.foto__staand {
-    max-height: 90%;
+    max-height: 80%;
     width: auto;
   }
 
   .modal-content.foto__vierkant{
     max-height: 600px;
     max-width: 600px;
+  }
+
+  .modal-content.foto__liggend {
+    max-height: 65%;
+    width: auto;
   }
 
   .close {
