@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express')
 const favicon = require('serve-favicon');
 const app = express(); 
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const bodyParser = require('body-parser'); 
 const compression = require('compression');
  
