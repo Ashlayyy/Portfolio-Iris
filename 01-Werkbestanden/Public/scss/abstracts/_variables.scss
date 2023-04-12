@@ -2,7 +2,7 @@ $fontColors: (
     "blackColor": #000,
     "grayColor": rgb(105, 105, 105),
     "grayHoverColor": rgb(125, 125, 125),
-    "orangeHoverColor": #708A66,//#e66842,
+    "orangeHoverColor": #e66842,//#708A66,
     "whiteColor": #eee
 );
 
@@ -14,11 +14,11 @@ $colors: (
 );
 
 $buttonColors: (
-    "orangeBackground": #95A683,//#e66842,
-    "darkRedBorder": #7fa752,//#942911,
-    "orangeBoxShadow": #6a8d5c, //#cf866c,
-    "textShadow": #95A683,//#854629,
-    "hoverColor": #627151,//#bc3315,
+    "orangeBackground": #e66842,//#95A683,
+    "darkRedBorder": #942911,//#7fa752,
+    "orangeBoxShadow":  #cf866c,//#6a8d5c,
+    "textShadow": #854629,//#95A683,
+    "hoverColor": #bc3315,//#627151,
 
     "blackGradient": linear-gradient(to bottom, #000000 5%, #000000 100%),
     "blackColor": #000,

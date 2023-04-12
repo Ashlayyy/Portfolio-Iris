@@ -168,17 +168,17 @@ body {
   text-transform: uppercase;
 }
 .navigation__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 .navigation__button {
   padding: 1.5rem 3rem;
   border-radius: 1rem;
   font-size: 100%;
-  background: #95A683;
-  background-color: #95A683;
-  box-shadow: inset 0px 1px 0px 0px #6a8d5c;
+  background: #e66842;
+  background-color: #e66842;
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
   border-radius: 5px;
-  border: 1px solid #7fa752;
+  border: 1px solid #942911;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -186,13 +186,13 @@ body {
   font-size: 1.5rem;
   padding: 1rem 2.5rem;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #95A683;
+  text-shadow: 0px 1px 0px #854629;
   transition: 0.3s all;
   text-transform: uppercase;
   font-family: "Bookman Old Style", sans-serif;
 }
 .navigation__button:hover {
-  background-color: #627151;
+  background-color: #bc3315;
 }
 
 .navigation_new {
@@ -254,7 +254,7 @@ body {
   text-transform: uppercase;
 }
 .navigation_new__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 .navigation_new__link__plusMin::after {
   content: "+";
@@ -266,11 +266,11 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 1rem;
   font-size: 100%;
-  background: #95A683;
-  background-color: #95A683;
-  box-shadow: inset 0px 1px 0px 0px #6a8d5c;
+  background: #e66842;
+  background-color: #e66842;
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
   border-radius: 5px;
-  border: 1px solid #7fa752;
+  border: 1px solid #942911;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -278,13 +278,13 @@ body {
   font-size: 1.5rem;
   padding: 1rem 2.5rem;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #95A683;
+  text-shadow: 0px 1px 0px #854629;
   transition: 0.3s all;
   text-transform: uppercase;
   font-family: "Bookman Old Style", sans-serif;
 }
 .navigation_new__button:hover {
-  background-color: #627151;
+  background-color: #bc3315;
 }
 .navigation_new__bars {
   display: none;
@@ -326,7 +326,7 @@ button.navigation_new__link {
   padding-left: 0;
 }
 .submenu__portfolio__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 .submenu__overmij {
   list-style: none;
@@ -349,7 +349,7 @@ button.navigation_new__link {
   padding-left: 0;
 }
 .submenu__overmij__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 .submenu__artis {
   list-style: none;
@@ -373,7 +373,7 @@ button.navigation_new__link {
   padding-left: 0;
 }
 .submenu__artis__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 .submenu__photoshop {
   list-style: none;
@@ -397,7 +397,7 @@ button.navigation_new__link {
   padding-left: 0;
 }
 .submenu__photoshop__link:hover {
-  color: #708A66;
+  color: #e66842;
 }
 
 .item__portfolio:hover .submenu__portfolio {
