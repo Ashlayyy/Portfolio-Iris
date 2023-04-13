@@ -20,7 +20,7 @@ app.use('/html', express.static('Public/html'));
 app.use('/components', express.static('Public/components'));
 app.use('/download', express.static('Public/download'));
 app.use('/img', express.static("../04-Archief/01 Foto's"));
-app.use('/loaderio-5c5fd274acf596fdca0b917e86d30500.txt', express.static('Public/data/text.txt'))
+app.use('/loaderio-c364995be9bfaece6ec6622e5a74a865.txt', express.static('Public/data/text.txt'))
 
 app.use(favicon(__dirname + '/favicon.ico'));
 
