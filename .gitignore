@@ -1,0 +1,8 @@
+01-Werkbestanden/node_modules
+01-Werkbestanden/Public/js/index-OOP.js
+01-Werkbestanden/*.DS_STORE
+01-Werkbestanden/.env
+01-Werkbestanden/logs
+01-Werkbestanden/.vscode
+.vscode
+.vscode/settings.json
