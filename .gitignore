@@ -1,4 +1,4 @@
-01-Werkbestanden/node_modules
+01-Werkbestanden/node_modules/*
 01-Werkbestanden/Public/js/index-OOP.js
 01-Werkbestanden/*.DS_STORE
 01-Werkbestanden/.env
