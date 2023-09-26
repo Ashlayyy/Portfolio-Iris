@@ -3,7 +3,7 @@
 
 # Portfolio Iris Meijer
 
-Dit project is een portfolio gemaakt voor Iris Meijer. Meer details over dit project staat hieronder beschreven, maar je kan mij natuurlijk ook altijd bereiken om vragen te stellen.
+Dit project is een portfolio gemaakt voor Iris Meijer. Meer details over dit project staat hieronder beschreven, maar je kan mij natuurlijk ook altijd een berichtje sturen om vragen te stellen.
 
 ## Live URL
 
