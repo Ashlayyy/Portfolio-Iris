@@ -12,7 +12,7 @@ https://icmphotography.nl
 
 ## Tech Stack
 
-**Client:** Javascript (OOP), HTML, SCSS
+**Client:** Javascript, HTML, SCSS
 
 **Server:** Node, Express
 
