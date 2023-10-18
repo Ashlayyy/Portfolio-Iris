@@ -24,4 +24,17 @@
         letter-spacing: 0.1rem;
         font-size: 80%;
     }
+
+    &__download {
+
+        &Button {
+            text-decoration: none;
+            color: map-get(variables.$colors, 'whiteColor');
+
+            &:hover {
+                cursor: pointer;
+                color: map-get(variables.$colors, 'grayColor');
+            }
+        }
+    }
 }
