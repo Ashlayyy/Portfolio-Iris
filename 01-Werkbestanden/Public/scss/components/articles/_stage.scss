@@ -27,14 +27,15 @@
 
     &__download {
 
-        &Button {
-            text-decoration: none;
-            color: map-get(variables.$colors, 'whiteColor');
+    }
 
-            &:hover {
-                cursor: pointer;
-                color: map-get(variables.$colors, 'grayColor');
-            }
+    &__downloadButton {
+        text-decoration: none;
+        color: map-get(variables.$colors, 'whiteColor');
+
+        &:hover {
+            cursor: pointer;
+            color: map-get(variables.$colors, 'grayColor');
         }
     }
 }
