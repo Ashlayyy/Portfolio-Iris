@@ -31,7 +31,7 @@
 
     &__downloadButton {
         text-decoration: none;
-        color: map-get(variables.$colors, 'whiteColor');
+        color: map-get(variables.$colors, 'blackColor');
 
         &:hover {
             cursor: pointer;

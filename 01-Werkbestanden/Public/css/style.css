@@ -1425,7 +1425,7 @@ button.navigation_new__link {
 }
 .main__stage__downloadButton {
   text-decoration: none;
-  color: #eee;
+  color: #000;
 }
 .main__stage__downloadButton:hover {
   cursor: pointer;
