@@ -1424,12 +1424,26 @@ button.navigation_new__link {
   font-size: 80%;
 }
 .main__stage__downloadButton {
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+  border-radius: 4rem;
+  border: 0.1rem solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #dbdbdb;
+  font-family: Arial;
+  font-size: 1.8rem;
+  padding: 1.5rem 2.4rem;
   text-decoration: none;
-  color: #000;
+  text-transform: uppercase;
 }
 .main__stage__downloadButton:hover {
-  cursor: pointer;
-  color: rgb(225, 225, 225);
+  background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+  background-color: #000;
+}
+.main__stage__downloadButton:active {
+  position: relative;
+  top: 1px;
 }
 
 .main__portret {

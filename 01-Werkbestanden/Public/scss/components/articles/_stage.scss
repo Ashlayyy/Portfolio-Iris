@@ -30,12 +30,6 @@
     }
 
     &__downloadButton {
-        text-decoration: none;
-        color: map-get(variables.$colors, 'blackColor');
-
-        &:hover {
-            cursor: pointer;
-            color: map-get(variables.$colors, 'grayColor');
-        }
+        @include mixins.blackButton;
     }
 }
