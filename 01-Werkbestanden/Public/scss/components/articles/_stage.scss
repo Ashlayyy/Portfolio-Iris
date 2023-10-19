@@ -25,10 +25,6 @@
         font-size: 80%;
     }
 
-    &__download {
-
-    }
-
     &__downloadButton {
         @include mixins.blackButton;
     }
