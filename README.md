@@ -7,7 +7,7 @@ Dit project is een portfolio gemaakt voor Iris Meijer. Meer details over dit pro
 
 ## Live URL
 
-https://icmphotography.nl
+https://photosbyiris.nl
 
 
 ## Tech Stack
